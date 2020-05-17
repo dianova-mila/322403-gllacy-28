@@ -7,32 +7,33 @@
   <body>
   <header class="header">
     <nav class="header-nav">
-      <a href="" class="header__logo"><img src="#" alt="Логотип магазина Gllacy"></a>
+      <a class="header__logo"><img src="#" alt="Логотип магазина Gllacy"></a>
       <ul>
-        <li class="header-nav__item"><a href="catalog.html">Каталог</a></li>
+        <li class="header-nav__item header-nav__item_active"><a href="">Каталог</a></li>
         <li class="header-nav__item"><a href="#">Доставка и оплата</a></li>
         <li class="header-nav__item"><a href="#">О компании</a></li>
       </ul>
     </nav>
     <!-- /.header-nav -->
-    <section class="header-actions">
-      <button class="header__button header-actions__search">Поиск</button>
-      <button class="header__button header-actions__singin">Вход</button>
-      <button class="header__button header-actions__backet">Корзина</button>
-    </section>
+    <ul class="header-actions">
+      <li><button class="header__button header-actions__search">Поиск</button></li>
+      <li><button class="header__button header-actions__singin">Вход</button></li>
+      <li><button class="header__button header-actions__backet">Пусто</button></li>
+    </ul>
     <!-- /.header-actions -->
-    <section class="header-contacts">
+    <p class="header-contacts">
       с 10 до 20, ежедневно<br>
-      8 812 450-25-25
-    </section>
-    <!-- /.header--contacts -->
+      <a href="tel:+78124502525">8 812 450-25-25</a>
+    </p>
+    <!-- /.header-contacts -->
   </header>
   <!-- /.header -->
   <main>
-    <h1>Магазин мороженного Глейси</h1>
-    <p class="overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
+    <h1>Магазин мороженого Глейси</h1>
     <section class="advantages">
       <h2 class="advantages__title">Приемущества</h2>
+      <p class="advantages__overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства
+        на развес</p>
       <p class="advantages__item">
         Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
         и проверенных временем технологий.</p>
@@ -47,11 +48,11 @@
         растаять в пути и позволяет сохранить превосходный вкус.</p>
     </section>
     <!-- /.advantages -->
-    <section class="newinblog">
-      <h2 class="newinblog__title">Новое в нашем блоге</h2>
-      <p class="newinblog__item"><a href="">10 способов сервировки фруктовых щербетов к столу </a></p>
-    </section>
-    <!-- /.newinblog -->
+    <article class="new">
+      <h2 class="new__title">Новое в нашем блоге</h2>
+      <p class="new__item"><a href="">10 способов сервировки фруктовых щербетов к столу </a></p>
+    </article>
+    <!-- /.new -->
     <section class="subscription">
       <h2 class="subscription__title">Подписка</h2>
       <p class="subscription__offer">
@@ -61,31 +62,31 @@
     <!-- /.subscription -->
   </main>
   <footer class="footer">
-    <section class="footer-socials">
-      <h3 class="footer-socials__title">Наши социальные сети</h3>
-      <ul class="footer-socials__items">
-        <li><a href="#" class="footer-socials__link">Facebook</a></li>
-        <li><a href="#" class="footer-socials__link">Vkontakte</a></li>
-        <li><a href="#" class="footer-socials__link">Instagram</a></li>
-        <li><a href="#" class="footer-socials__link">Twitter</a></li>
+    <section class="social">
+      <h3>Наши социальные сети</h3>
+      <ul class="social__items">
+        <li><a href="#" class="social__link">Facebook</a></li>
+        <li><a href="#" class="social__link">Vkontakte</a></li>
+        <li><a href="#" class="social__link">Instagram</a></li>
+        <li><a href="#" class="social__link">Twitter</a></li>
       </ul>
     </section>
-    <!-- /.socials -->
-    <section class="footer-addinfo">
-      <h3 class="footer-addinfo__title">Дополнительная информация</h3>
-      <ul class="footer-addinfo__items">
-        <li><a href="#" class="footer-addinfo__link footer-addinfo__forproviders">Для поставщиков</a></li>
-        <li><a href="#" class="footer-addinfo__link">Наши документы</a></li>
-        <li><a href="#" class="footer-addinfo__link">О производстве</a></li>
-        <li><a href="#" class="footer-addinfo__link">Экологические стандарты</a></li>
+    <!-- /.social -->
+    <section class="footer-nav">
+      <h3>Дополнительная информация</h3>
+      <ul class="footer-nav__items">
+        <li><a href="#" class="footer-nav__link footer--nav__link_withheard">Для поставщиков</a></li>
+        <li><a href="#" class="footer-nav__link">Наши документы</a></li>
+        <li><a href="#" class="footer-nav__link">О производстве</a></li>
+        <li><a href="#" class="footer-nav__link">Экологические стандарты</a></li>
       </ul>
     </section>
-    <!-- /.addinfo -->
-    <section class="footer-madein">
-      <a href="" class="footer-madein__logo"><img src="#" alt="Логотип HTML Academy"></a>
+    <!-- /.footer-nav -->
+    <section class="footer-copyright">
+      <a class="footer-copyright__logo"><img src="#" alt="Логотип HTML Academy"></a>
       <p class="descr">Сделано в HTML Academy &#169; 2019 </p>
     </section>
-    <!-- /.madein -->
+    <!-- /.footer-copyright -->
   </footer>
   <!-- /.footer -->
   </body>
