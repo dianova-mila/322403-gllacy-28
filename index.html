@@ -7,12 +7,13 @@
   <body>
   <header class="header">
     <nav class="header-nav">
-      <a class="header__logo"><img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy"></a>
+      <a class="header-nav__logo">
+        <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy"></a>
       <ul>
         <li class="header-nav__item">
-          <button type="button" class="header__button header-catalog__button">Каталог</button>
+          <a href="#" class="header-nav__catalog">Каталог</a>
           <ul class="header-catalog">
-            <li class="header-canalog__new"><a href="#">Новинки</a></li>
+            <li class="header-catalog__new"><a href="#">Новинки</a></li>
             <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
@@ -26,23 +27,22 @@
     <!-- /.header-nav -->
     <ul class="header-actions">
       <li>
-        <button type="button" class="header__button header-actions__search">
-          <img src="img/header/loupe.svg" alt="Поиск">
-        </button>
+        <button type="button" class="header__button header-actions__search">Поиск</button>
         <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search-field">Поиск</label>
           <input class="header-search__input" type="text" name="search" id="search-field" placeholder="Крем-брюле">
         </form>
       </li>
-      <li><button type="button" class="header__button header-actions__signin">Вход</button>
+      <li>
+        <button type="button" class="header__button header-actions__signin">Вход</button>
         <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
-          <p class="header-signin__login">
+          <p class="header-signin__item">
             <label class="visually-hidden" for="signin-login">Электронная почта</label>
-            <input class="header-signin__login-input" type="email" name="login" id="signin-login" placeholder="email@example.com">
+            <input class="header-signin__login" type="email" name="login" id="signin-login" placeholder="email@example.com">
           </p>
-          <p class="header-signin__password">
+          <p class="header-signin__item">
             <label class="visually-hidden" for="signin-password">Пароль</label>
-            <input class="header-signin__login-password" type="password" name="password" id="signin-password" placeholder="••••••••">
+            <input class="header-signin__password" type="password" name="password" id="signin-password" placeholder="••••••••">
           </p>
           <button type="submit" class="button_red header-signin__button">Войти</button>
           <p class="header-signin__links">
@@ -51,7 +51,9 @@
           </p>
         </form>
       </li>
-      <li><button type="button" class="header__button header-actions__backet">Пусто</button></li>
+      <li>
+        <button type="button" class="header__button header-actions__backet">Пусто</button>
+      </li>
     </ul>
     <!-- /.header-actions -->
     <p class="header-contacts">
@@ -70,7 +72,7 @@
           <img class="slider-item__img"  src="img/slider/ice_1-2.png" height="519" width="333" alt="Фотография мороженого">
           <figcaption class="slider-item__text">Крем-брюле и пломбир с малиновым джемом</figcaption>
         </figure>
-        <button type="button" class="slider-item__button button_red">Давайте оба</button>
+        <a href="#" class="slider-item__link button_red">Давайте оба</a>
       </article>
       <!-- /.slider-item -->
       <article class="slider__item slider-item">
@@ -79,7 +81,7 @@
           <img class="slider-item__img"  src="img/slider/ice_2-2.png" height="523" width="338" alt="Фотография мороженого">
           <figcaption  class="slider-item__text">Шоколадный пломбир и лимонный сорбет</figcaption>
         </figure>
-        <button type="button" class="slider-item__button button_red">Давайте оба</button>
+        <a href="#" class="slider-item__link button_red">Давайте оба</a>
       </article>
       <!-- /.slider-item -->
       <article class="slider__item slider-item">
@@ -88,7 +90,7 @@
           <img class="slider-item__img"  src="img/slider/ice_3-2.png" height="523" width="326" alt="Фотография мороженого">
           <figcaption class="slider-item__text">Пломбир с помадкой и клубничный щербет</figcaption>
         </figure>
-        <button type="button" class="slider-item__button button_red">Давайте оба</button>
+        <a href="#" class="slider-item__link button_red">Давайте оба</a>
       </article>
       <!-- /.slider-item -->
       <ul class="slider-control">
@@ -104,14 +106,14 @@
         <h2 class="gift__title">Малинка даром!</h2>
         <p class="gift__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
           маринового варенья бесплатно.</p>
-        <button type="button" class="button_red">Хочу варенье!</button>
+        <a href="#" class="button_red">Хочу варенье!</a>
       </article>
       <!-- /.gift -->
       <article class="gift gift_chocolate">
         <h2 class="gift__title">Шоколадки даром!</h2>
         <p class="gift__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
           присыпки совершенно бесплатно.</p>
-        <button type="button" class="button_red">Хочу шоколадки!</button>
+        <a href="#" class="button_red">Хочу шоколадки!</a>
       </article>
       <!-- /.gift -->
     </section>
@@ -192,11 +194,11 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback__text">Мы обязательно вам ответим!</p>
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback__name">
+        <p class="feedback__item">
           <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
           <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Имя Фамилия">
         </p>
-        <p class="feedback__email">
+        <p class="feedback__item">
           <label class="visually-hidden" for="feedback-email-field">Электронная почта</label>
           <input type="email" name="feedback-email" id="feedback-email-field" placeholder="email@example.com">
         </p>

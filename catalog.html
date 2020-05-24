@@ -7,14 +7,14 @@
 <body>
   <header class="header">
     <nav class="header-nav">
-      <a href="index.html" class="header__logo">
+      <a href="index.html" class="header-nav__logo">
         <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul>
         <li class="header-nav__item header-nav__item_active">
-          <button type="button" class="header__button header-catalog__button">Каталог</button>
+          <a href="#" class="header-nav__catalog">Каталог</a>
           <ul class="header-catalog">
-            <li class="header-canalog__new"><a href="#">Новинки</a></li>
+            <li class="header-catalog__new"><a href="#">Новинки</a></li>
             <li><a>Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
@@ -27,23 +27,23 @@
     </nav>
     <!-- /.header-nav -->
     <ul class="header-actions">
-      <li><button type="button" class="header__button header-actions__search">
-        <img src="img/header/loupe.svg" alt="Поиск">
-      </button>
+      <li>
+        <button type="button" class="header__button header-actions__search">Поиск</button>
         <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search-field">Поиск</label>
           <input class="header-search__input" type="text" name="search" id="search-field" placeholder="Крем-брюле">
         </form>
       </li>
-      <li><button type="button" class="header__button header-actions__singin">Вход</button>
+      <li>
+        <button type="button" class="header__button header-actions__singin">Вход</button>
         <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
-          <p class="header-signin__login">
+          <p class="header-signin__item">
             <label class="visually-hidden" for="signin-login">Электронная почта</label>
-            <input class="header-signin__login-input" type="email" name="login" id="signin-login" placeholder="email@example.com">
+            <input class="header-signin__login" type="email" name="login" id="signin-login" placeholder="email@example.com">
           </p>
-          <p class="header-signin__password">
+          <p class="header-signin__item">
             <label class="visually-hidden" for="signin-password">Пароль</label>
-            <input class="header-signin__login-password" type="password" name="password" id="signin-password" placeholder="••••••••">
+            <input class="header-signin__password" type="password" name="password" id="signin-password" placeholder="••••••••">
           </p>
           <button type="submit" class="button_red header-signin__button">Войти</button>
           <p class="header-signin__links">
@@ -52,25 +52,28 @@
           </p>
         </form>
       </li>
-      <li><button type="button" class="header__button header-actions__backet">2 товара</button>
-        <table class="backet__list">
-          <tr class="backet__item">
-            <td><button type="button" class="backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
-            <td><img src="img/header/ice-orange-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг х <span class="light-grey">200 руб.</span></td>
-            <td>300 руб.</td>
-          </tr>
-          <tr class="backet__item">
-            <td><button type="button" class="backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
-            <td><img src="img/header/ice-str-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг х <span class="light-grey">300 руб.</span></td>
-            <td>450 руб.</td>
-          </tr>
-        </table>
-        <p>Итого: 750 руб.</p>
-        <button type="button" class="button_red backet__button">Оформить заказ</button>
+      <li>
+        <button type="button" class="header__button header-actions__backet">2 товара</button>
+        <section class="header-backet">
+          <table class="header-backet__list">
+            <tr class="header-backet__item">
+              <td><button type="button" class="header-backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
+              <td><img src="img/header/ice-orange-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х <span class="light-grey">200 руб.</span></td>
+              <td>300 руб.</td>
+            </tr>
+            <tr class="header-backet__item">
+              <td><button type="button" class="header-backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
+              <td><img src="img/header/ice-str-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х <span class="light-grey">300 руб.</span></td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <p>Итого: 750 руб.</p>
+          <button type="button" class="button_red header-backet__button">Оформить заказ</button>
+        </section>
       </li>
     </ul>
     <!-- /.header-actions -->
