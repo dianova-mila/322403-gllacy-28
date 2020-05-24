@@ -11,16 +11,67 @@
         <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul>
-        <li class="header-nav__item header-nav__item_active"><a href="">Каталог</a></li>
+        <li class="header-nav__item header-nav__item_active">
+          <button type="button" class="header__button header-catalog__button">Каталог</button>
+          <ul class="header-catalog">
+            <li class="header-canalog__new"><a href="#">Новинки</a></li>
+            <li><a>Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li class="header-nav__item"><a href="#">Доставка и оплата</a></li>
         <li class="header-nav__item"><a href="#">О компании</a></li>
       </ul>
     </nav>
     <!-- /.header-nav -->
     <ul class="header-actions">
-      <li><button class="header__button header-actions__search">Поиск</button></li>
-      <li><button class="header__button header-actions__singin">Вход</button></li>
-      <li><button class="header__button header-actions__backet">2 товара</button></li>
+      <li><button type="button" class="header__button header-actions__search">
+        <img src="img/header/loupe.svg" alt="Поиск">
+      </button>
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-field">Поиск</label>
+          <input class="header-search__input" type="text" name="search" id="search-field" placeholder="Крем-брюле">
+        </form>
+      </li>
+      <li><button type="button" class="header__button header-actions__singin">Вход</button>
+        <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
+          <p class="header-signin__login">
+            <label class="visually-hidden" for="signin-login">Электронная почта</label>
+            <input class="header-signin__login-input" type="email" name="login" id="signin-login" placeholder="email@example.com">
+          </p>
+          <p class="header-signin__password">
+            <label class="visually-hidden" for="signin-password">Пароль</label>
+            <input class="header-signin__login-password" type="password" name="password" id="signin-password" placeholder="••••••••">
+          </p>
+          <button type="submit" class="button_red header-signin__button">Войти</button>
+          <p class="header-signin__links">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </li>
+      <li><button type="button" class="header__button header-actions__backet">2 товара</button>
+        <table class="backet__list">
+          <tr class="backet__item">
+            <td><button type="button" class="backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
+            <td><img src="img/header/ice-orange-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
+            <td>Пломбир с апельсиновым джемом</td>
+            <td>1,5 кг х <span class="light-grey">200 руб.</span></td>
+            <td>300 руб.</td>
+          </tr>
+          <tr class="backet__item">
+            <td><button type="button" class="backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
+            <td><img src="img/header/ice-str-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td>1,5 кг х <span class="light-grey">300 руб.</span></td>
+            <td>450 руб.</td>
+          </tr>
+        </table>
+        <p>Итого: 750 руб.</p>
+        <button type="button" class="button_red backet__button">Оформить заказ</button>
+      </li>
     </ul>
     <!-- /.header-actions -->
     <p class="header-contacts">
@@ -37,9 +88,9 @@
       <li class="breadcrumbs__item"><a>Сливочное</a></li>
     </ul>
     <!-- /.breadcrumbs -->
-    <h1>Сливочное мороженое</h1>
+    <h1 class="visually-hidden">Сливочное мороженое</h1>
     <section class="catalog">
-      <h2>Каталог мороженого</h2>
+      <h2 class="visually-hidden">Каталог мороженого</h2>
       <article class="catalog-item">
         <img src="img/catalog/ice-orange.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">310 &#8381;<span class="small">/кг</span></p>
@@ -103,7 +154,7 @@
     </section>
     <!-- /.catalog -->
     <div class="pages">
-      <button class="back" disabled>Назад</button>
+      <button type="button" class="back" disabled>Назад</button>
       <ul>
         <li class="pages_active"><a>1</a></li>
         <li><a href="#">2</a></li>
@@ -111,13 +162,13 @@
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
       </ul>
-      <button class="forward">Вперед</button>
+      <button type="button" class="forward">Вперед</button>
     </div>
     <!-- /.pages -->
   </main>
   <footer class="footer">
     <section class="social">
-      <h3>Наши социальные сети</h3>
+      <h3 class="visually-hidden">Наши социальные сети</h3>
       <ul class="social__list">
         <li><a href="#" class="social__link">Facebook</a></li>
         <li><a href="#" class="social__link">Vkontakte</a></li>
@@ -127,7 +178,7 @@
     </section>
     <!-- /.social -->
     <section class="footer-nav">
-      <h3>Дополнительная информация</h3>
+      <h3 class="visually-hidden">Дополнительная информация</h3>
       <ul class="footer-nav__list">
         <li><a href="#" class="footer-nav__link footer-nav__link_withheard">Для поставщиков</a></li>
         <li><a href="#" class="footer-nav__link">Наши документы</a></li>
