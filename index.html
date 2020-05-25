@@ -25,12 +25,14 @@
       </ul>
     </nav>
     <!-- /.header-nav -->
+
     <ul class="header-actions">
       <li>
         <button type="button" class="header__button header-actions__search">Поиск</button>
         <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search-field">Поиск</label>
-          <input class="header-search__input" type="text" name="search" id="search-field" placeholder="Крем-брюле">
+          <input class="header-search__input" type="text" name="search" id="search-field"
+                 placeholder="Крем-брюле" required>
         </form>
       </li>
       <li>
@@ -38,11 +40,13 @@
         <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
           <p class="header-signin__item">
             <label class="visually-hidden" for="signin-login">Электронная почта</label>
-            <input class="header-signin__login" type="email" name="login" id="signin-login" placeholder="email@example.com">
+            <input class="header-signin__login" type="email" name="login" id="signin-login"
+                   placeholder="email@example.com" required>
           </p>
           <p class="header-signin__item">
             <label class="visually-hidden" for="signin-password">Пароль</label>
-            <input class="header-signin__password" type="password" name="password" id="signin-password" placeholder="••••••••">
+            <input class="header-signin__password" type="password" name="password" id="signin-password"
+                   placeholder="••••••••" required>
           </p>
           <button type="submit" class="button_red header-signin__button">Войти</button>
           <p class="header-signin__links">
@@ -56,6 +60,7 @@
       </li>
     </ul>
     <!-- /.header-actions -->
+
     <p class="header-contacts">
       с 10 до 20, ежедневно<br>
       <a href="tel:+78124502525">8 812 450-25-25</a>
@@ -65,6 +70,7 @@
   <!-- /.header -->
   <main>
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
+
     <section class="slider">
       <article class="slider__item slider-item">
         <figure>
@@ -101,6 +107,7 @@
       </ul>
     </section>
     <!-- /.slider -->
+
     <section class="gifts">
       <article class="gift gift_raspberry">
         <h2 class="gift__title">Малинка даром!</h2>
@@ -118,6 +125,7 @@
       <!-- /.gift -->
     </section>
     <!-- /.gifts -->
+
     <section class="hits">
       <h3 class="visually-hidden">Наши хиты среди мороженого</h3>
       <article class="catalog-item catalog-item_hit">
@@ -142,6 +150,7 @@
       </article>
     </section>
     <!-- /.hits -->
+
     <section class="advantages">
       <h2 class="visually-hidden">Приемущества</h2>
       <p class="advantages__overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства
@@ -160,6 +169,7 @@
         растаять в пути и позволяет сохранить превосходный вкус.</p>
     </section>
     <!-- /.advantages -->
+
     <article class="news">
       <h2 class="news__title">Новое в нашем блоге</h2>
       <p class="news__item"><a href="">10 способов сервировки фруктовых щербетов к столу </a></p>
@@ -169,10 +179,17 @@
       <h2 class="visually-hidden">Подписка</h2>
       <p class="subscription__offer">
         Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <!--   Тут будет форма   -->
+        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+      </p>
+      <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="subscription-email-field">Электронная почта</label>
+        <input class="subscription__email" type="email" name="subscription-email"
+               id="subscription-email-field" placeholder="email@example.com" required>
+        <button class="button_red subscription__button" type="submit">Отправить</button>
+      </form>
     </section>
     <!-- /.subscription -->
+
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <!--   Тут будет карта   -->
@@ -190,26 +207,29 @@
       <!-- /.map-contacts -->
     </section>
     <!-- /.map -->
+
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback__text">Мы обязательно вам ответим!</p>
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback__item">
           <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
-          <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Имя Фамилия">
+          <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Имя Фамилия" required>
         </p>
         <p class="feedback__item">
           <label class="visually-hidden" for="feedback-email-field">Электронная почта</label>
-          <input type="email" name="feedback-email" id="feedback-email-field" placeholder="email@example.com">
+          <input type="email" name="feedback-email" id="feedback-email-field" placeholder="email@example.com" required>
         </p>
         <p class="feedback__message">
           <label class="visually-hidden" for="feedback-text-field">Текст сообщения</label>
-          <textarea name="feedback-text" id="feedback-text-field" cols="30" rows="10">В свободной форме</textarea>
+          <textarea name="feedback-text" id="feedback-text-field" cols="30" rows="10" required>
+            В свободной форме
+          </textarea>
         </p>
         <button type="submit" class="button_red feedback__button">Отправить</button>
       </form>
     </section>
-    <!-- /.popup -->
+    <!-- /.feedback -->
   </main>
   <footer class="footer">
     <section class="social">
@@ -222,6 +242,7 @@
       </ul>
     </section>
     <!-- /.social -->
+
     <section class="footer-nav">
       <h3 class="visually-hidden">Дополнительная информация</h3>
       <ul class="footer-nav__list">
@@ -232,6 +253,7 @@
       </ul>
     </section>
     <!-- /.footer-nav -->
+
     <section class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright__logo">
         <img src="img/footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">

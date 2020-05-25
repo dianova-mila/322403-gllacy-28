@@ -26,6 +26,7 @@
       </ul>
     </nav>
     <!-- /.header-nav -->
+
     <ul class="header-actions">
       <li>
         <button type="button" class="header__button header-actions__search">Поиск</button>
@@ -77,6 +78,7 @@
       </li>
     </ul>
     <!-- /.header-actions -->
+
     <p class="header-contacts">
       с 10 до 20, ежедневно<br>
       <a href="tel:+78124502525">8 812 450-25-25</a>
@@ -84,6 +86,7 @@
     <!-- /.header-contacts -->
   </header>
   <!-- /.header -->
+
   <main>
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
@@ -92,6 +95,76 @@
     </ul>
     <!-- /.breadcrumbs -->
     <h1 class="visually-hidden">Сливочное мороженое</h1>
+
+    <section class="filter">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter__item">
+          <label class="filter__title" for="filter-sort-field">Сортировка:</label>
+          <select class="filter__input" name="filter-sort" id="filter-sort-field">
+            <option value="popular" selected>по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fat">по жирности</option>
+          </select>
+        </fieldset>
+          <div class="filter__price">
+            <p class="filter__title">Цена: 100 ₽ – 500 ₽</p>
+            <div class="filter__range filter__input">
+              <button type="button" class="filter__button_circle">от</button>
+              <button type="button" class="filter__button_circle">до</button>
+            </div>
+          </div>
+        <fieldset class="filte__item">
+          <legend class="filter__title">Жирность:</legend>
+          <ul class="filter__input">
+            <li>
+              <input class="filter__radio" type="radio" name="filter-fat" value="0" id="filter-fat-0">
+              <label for="filter-fat-0">0%</label>
+            </li>
+            <li>
+              <input class="filter__radio" type="radio" name="filter-fat" value="10" id="filter-fat-10" checked>
+              <label for="filter-fat-10">до 10%</label>
+            </li>
+            <li>
+              <input class="filter__radio" type="radio" name="filter-fat" value="30" id="filter-fat-30">
+              <label for="filter-fat-30">до 30%</label>
+            </li>
+            <li>
+              <input class="filter__radio" type="radio" name="filter-fat" value="30+" id="filter-fat-30+">
+              <label for="filter-fat-30+">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__item">
+          <legend class="filter__title">Наполнители:</legend>
+          <ul class="filter__input">
+            <li>
+              <input class="filter__checkbox" type="checkbox" name="chocolate" id="chocolate-field" checked>
+              <label for="chocolate-field">шоколадные</label>
+            </li>
+            <li>
+              <input class="filter__checkbox" type="checkbox" name="sugar" id="sugar-field" checked>
+              <label for="sugar-field">сахарные присыпки</label>
+            </li>
+            <li>
+              <input class="filter__checkbox" type="checkbox" name="fruits" id="fruits-field">
+              <label for="fruits-field">фрукты</label>
+            </li>
+            <li>
+              <input class="filter__checkbox" type="checkbox" name="syrups" id="syrups-field">
+              <label for="syrups-field">сиропы</label>
+            </li>
+            <li>
+              <input class="filter__checkbox" type="checkbox" name="jams" id="jams-field">
+              <label for="jams-field">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter__button">Применить</button>
+      </form>
+    </section>
+    <!-- /.filter -->
+
     <section class="catalog">
       <h2 class="visually-hidden">Каталог мороженого</h2>
       <article class="catalog-item">
@@ -156,6 +229,7 @@
       </article>
     </section>
     <!-- /.catalog -->
+
     <div class="pages">
       <button type="button" class="back" disabled>Назад</button>
       <ul>
@@ -169,6 +243,7 @@
     </div>
     <!-- /.pages -->
   </main>
+
   <footer class="footer">
     <section class="social">
       <h3 class="visually-hidden">Наши социальные сети</h3>
@@ -180,6 +255,7 @@
       </ul>
     </section>
     <!-- /.social -->
+
     <section class="footer-nav">
       <h3 class="visually-hidden">Дополнительная информация</h3>
       <ul class="footer-nav__list">
@@ -190,6 +266,7 @@
       </ul>
     </section>
     <!-- /.footer-nav -->
+
     <section class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright__logo">
         <img src="img/footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
