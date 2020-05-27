@@ -3,13 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
+
+    <!--  Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="header">
     <nav class="header-nav">
       <a class="header-nav__logo">
-        <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy"></a>
-      <ul>
+        <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
+      </a>
+      <ul class="header-nav__list">
         <li class="header-nav__item">
           <a href="#" class="header-nav__catalog">Каталог</a>
           <ul class="header-catalog">
@@ -56,14 +63,14 @@
         </form>
       </li>
       <li>
-        <button type="button" class="header__button header-actions__backet">Пусто</button>
+        <button type="button" class="header__button header-actions__backet_empty">Пусто</button>
       </li>
     </ul>
     <!-- /.header-actions -->
 
     <p class="header-contacts">
       с 10 до 20, ежедневно<br>
-      <a href="tel:+78124502525">8 812 450-25-25</a>
+      <a class="header-contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
     </p>
     <!-- /.header-contacts -->
   </header>
@@ -235,10 +242,10 @@
     <section class="social">
       <h3 class="visually-hidden">Наши социальные сети</h3>
       <ul class="social__list">
-        <li><a href="#" class="social__link">Facebook</a></li>
-        <li><a href="#" class="social__link">Vkontakte</a></li>
-        <li><a href="#" class="social__link">Instagram</a></li>
-        <li><a href="#" class="social__link">Twitter</a></li>
+        <li><a href="#" class="social__link social__fb"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a href="#" class="social__link social__vk"><span class="visually-hidden">Vkontakte</span></a></li>
+        <li><a href="#" class="social__link social__inst"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a href="#" class="social__link social__twitter"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
     </section>
     <!-- /.social -->
@@ -258,7 +265,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright__logo">
         <img src="img/footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
       </a>
-      <p class="descr">Сделано в HTML Academy &#169; 2019 </p>
+      <p class="descr">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019 </p>
     </section>
     <!-- /.footer-copyright -->
   </footer>

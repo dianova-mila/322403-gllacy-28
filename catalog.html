@@ -3,6 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог - Gllacy Shop</title>
+
+  <!--  Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -54,7 +60,7 @@
         </form>
       </li>
       <li>
-        <button type="button" class="header__button header-actions__backet">2 товара</button>
+        <button type="button" class="header__button header-actions__backet_full">2 товара</button>
         <section class="header-backet">
           <table class="header-backet__list">
             <tr class="header-backet__item">
@@ -81,7 +87,7 @@
 
     <p class="header-contacts">
       с 10 до 20, ежедневно<br>
-      <a href="tel:+78124502525">8 812 450-25-25</a>
+      <a class="header-contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
     </p>
     <!-- /.header-contacts -->
   </header>
@@ -94,7 +100,7 @@
       <li class="breadcrumbs__item"><a>Сливочное</a></li>
     </ul>
     <!-- /.breadcrumbs -->
-    <h1 class="visually-hidden">Сливочное мороженое</h1>
+    <h1 class="catalog__title">Сливочное мороженое</h1>
 
     <section class="filter">
       <form action="https://echo.htmlacademy.ru" method="get">
@@ -172,62 +178,62 @@
       <article class="catalog-item">
         <img src="img/catalog/ice-orange.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">310 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+        <h3 class="catalog-item__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-coffee.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">380 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочно-кофейное с кусочками шоколада</h3>
+        <h3 class="catalog-item__title">Сливочно-кофейное с кусочками шоколада</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-str.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">355 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+        <h3 class="catalog-item__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-brulee.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">415 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочное крем-брюле с карамельной подливкой </h3>
+        <h3 class="catalog-item__title">Сливочное крем-брюле с карамельной подливкой </h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-cranb.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">325 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочное с брусничным джемом</h3>
+        <h3 class="catalog-item__title">Сливочное с брусничным джемом</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-blueb.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">410 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочно-черничное с цельными ягодами черники </h3>
+        <h3 class="catalog-item__title">Сливочно-черничное с цельными ягодами черники </h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-lemon.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">315 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочно-лимонное с карамельной присыпкой</h3>
+        <h3 class="catalog-item__title">Сливочно-лимонное с карамельной присыпкой</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-choco.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">320 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочное с шоколадной стружкой</h3>
+        <h3 class="catalog-item__title">Сливочное с шоколадной стружкой</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-vanilla.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">440 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочно-ванильное с кусочками шоколада</h3>
+        <h3 class="catalog-item__title">Сливочно-ванильное с кусочками шоколада</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-mentol.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">435 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочноe с ментоловым сиропом</h3>
+        <h3 class="catalog-item__title">Сливочноe с ментоловым сиропом</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-black_choco.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">355 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочное с кусочками черного шоколада</h3>
+        <h3 class="catalog-item__title">Сливочное с кусочками черного шоколада</h3>
       </article>
       <article class="catalog-item">
         <img src="img/catalog/ice-mint.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
         <p class="catalog-item__price">420 &#8381;<span class="small">/кг</span></p>
-        <h3 class="catalog-item title">Сливочное с мятным сиропом</h3>
+        <h3 class="catalog-item__title">Сливочное с мятным сиропом</h3>
       </article>
     </section>
     <!-- /.catalog -->
