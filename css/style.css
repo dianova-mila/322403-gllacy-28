@@ -80,29 +80,6 @@ ul {
   font-weight: 700;
   line-height: 18px;
 }
-.header__link {
-  color: var(--basic-white);
-}
-.header__link:focus, .header__link:hover {
-  color: var(--basic-black);
-  background: var(--basic-white);
-  border-radius: 26px;
-}
-.header__link:active {
-  background: var(--light-light-grey);
-  box-shadow: inset 0 2px 1px #696969;
-  border-radius: 26px;
-}
-.header__link_active {
-  background: var(--dark-red);
-  border-radius: 26px;
-}
-.header__link_active:hover, .header__link_active:focus, .header__link_active:active {
-  background: var(--dark-red);
-  color: var(--basic-white);
-  box-shadow: none;
-  cursor: default;
-}
 .header__button {
   color: var(--basic-white);
   background: var(--basic-white-20);
@@ -116,6 +93,33 @@ ul {
   color: var(--basic-black);
   background: var(--basic-white);
 }
+.header__button_full {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+.header-nav__link {
+  color: var(--basic-white);
+}
+.header-nav__link:focus, .header-nav__link:hover {
+  color: var(--basic-black);
+  background: var(--basic-white);
+  border-radius: 26px;
+}
+.header-nav__link:active {
+  background: var(--light-light-grey);
+  box-shadow: inset 0 2px 1px #696969;
+  border-radius: 26px;
+}
+.header-nav__link_active {
+  background: var(--dark-red);
+  border-radius: 26px;
+}
+.header-nav__link_active:hover, .header-nav__link_active:focus, .header-nav__link_active:active {
+  background: var(--dark-red);
+  color: var(--basic-white);
+  box-shadow: none;
+  cursor: default;
+}
 .header-catalog {
   display: none;
 }
@@ -124,10 +128,6 @@ ul {
 }
 .header-signin {
   display: none;
-}
-.header-actions__backet_full {
-  background-color: var(--basic-white);
-  color: var(--basic-black);
 }
 .header-backet {
   display: none;
@@ -164,6 +164,8 @@ ul {
   color: var(--basic-black);
 }
 .news__title {
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
 }
 .news__item {
@@ -250,7 +252,7 @@ ul {
   color: var(--basic-white);
 }
 
-.catalog__title {
+.catalog-title {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
