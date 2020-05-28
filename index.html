@@ -18,7 +18,7 @@
       </a>
       <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a href="#" class="header-nav__catalog">Каталог</a>
+          <a href="#" class="header__link header-nav__catalog">Каталог</a>
           <ul class="header-catalog">
             <li class="header-catalog__new"><a href="#">Новинки</a></li>
             <li><a href="catalog.html">Сливочное</a></li>
@@ -27,8 +27,8 @@
             <li><a href="#">Мелорин</a></li>
           </ul>
         </li>
-        <li class="header-nav__item"><a href="#">Доставка и оплата</a></li>
-        <li class="header-nav__item"><a href="#">О компании</a></li>
+        <li class="header-nav__item"><a class="header__link" href="#">Доставка и оплата</a></li>
+        <li class="header-nav__item"><a class="header__link" href="#">О компании</a></li>
       </ul>
     </nav>
     <!-- /.header-nav -->
@@ -55,7 +55,7 @@
             <input class="header-signin__password" type="password" name="password" id="signin-password"
                    placeholder="••••••••" required>
           </p>
-          <button type="submit" class="button_red header-signin__button">Войти</button>
+          <button type="submit" class="button-red header-signin__button">Войти</button>
           <p class="header-signin__links">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -63,7 +63,7 @@
         </form>
       </li>
       <li>
-        <button type="button" class="header__button header-actions__backet_empty">Пусто</button>
+        <button type="button" class="header__button header-actions__backet header-actions__backet_empty">Пусто</button>
       </li>
     </ul>
     <!-- /.header-actions -->
@@ -85,7 +85,7 @@
           <img class="slider-item__img"  src="img/slider/ice_1-2.png" height="519" width="333" alt="Фотография мороженого">
           <figcaption class="slider-item__text">Крем-брюле и пломбир с малиновым джемом</figcaption>
         </figure>
-        <a href="#" class="slider-item__link button_red">Давайте оба</a>
+        <a href="#" class="slider-item__link button-red">Давайте оба</a>
       </article>
       <!-- /.slider-item -->
       <article class="slider__item slider-item">
@@ -94,7 +94,7 @@
           <img class="slider-item__img"  src="img/slider/ice_2-2.png" height="523" width="338" alt="Фотография мороженого">
           <figcaption  class="slider-item__text">Шоколадный пломбир и лимонный сорбет</figcaption>
         </figure>
-        <a href="#" class="slider-item__link button_red">Давайте оба</a>
+        <a href="#" class="slider-item__link button-red">Давайте оба</a>
       </article>
       <!-- /.slider-item -->
       <article class="slider__item slider-item">
@@ -103,7 +103,7 @@
           <img class="slider-item__img"  src="img/slider/ice_3-2.png" height="523" width="326" alt="Фотография мороженого">
           <figcaption class="slider-item__text">Пломбир с помадкой и клубничный щербет</figcaption>
         </figure>
-        <a href="#" class="slider-item__link button_red">Давайте оба</a>
+        <a href="#" class="slider-item__link button-red">Давайте оба</a>
       </article>
       <!-- /.slider-item -->
       <ul class="slider-control">
@@ -120,14 +120,14 @@
         <h2 class="gift__title">Малинка даром!</h2>
         <p class="gift__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
           маринового варенья бесплатно.</p>
-        <a href="#" class="button_red">Хочу варенье!</a>
+        <a href="#" class="button-red">Хочу варенье!</a>
       </article>
       <!-- /.gift -->
       <article class="gift gift_chocolate">
         <h2 class="gift__title">Шоколадки даром!</h2>
         <p class="gift__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
           присыпки совершенно бесплатно.</p>
-        <a href="#" class="button_red">Хочу шоколадки!</a>
+        <a href="#" class="button-red">Хочу шоколадки!</a>
       </article>
       <!-- /.gift -->
     </section>
@@ -137,22 +137,22 @@
       <h3 class="visually-hidden">Наши хиты среди мороженого</h3>
       <article class="catalog-item catalog-item_hit">
         <img src="img/catalog/ice-orange.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
-        <p class="catalog-item__price">310 &#8381;<span class="small">/кг</span></p>
+        <p class="catalog-item__price">310 &#8381;<span class="catalog-item__price-small">/кг</span></p>
         <h3 class="catalog-item title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
       </article>
       <article class="catalog-item catalog-item_hit">
         <img src="img/catalog/ice-coffee.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
-        <p class="catalog-item__price">380 &#8381;<span class="small">/кг</span></p>
+        <p class="catalog-item__price">380 &#8381;<span class="catalog-item__price-small">/кг</span></p>
         <h3 class="catalog-item title">Сливочно-кофейное с кусочками шоколада</h3>
       </article>
       <article class="catalog-item catalog-item_hit">
         <img src="img/catalog/ice-str.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
-        <p class="catalog-item__price">355 &#8381;<span class="small">/кг</span></p>
+        <p class="catalog-item__price">355 &#8381;<span class="catalog-item__price-small">/кг</span></p>
         <h3 class="catalog-item title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
       </article>
       <article class="catalog-item catalog-item_hit">
         <img src="img/catalog/ice-brulee.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
-        <p class="catalog-item__price">415 &#8381;<span class="small">/кг</span></p>
+        <p class="catalog-item__price">415 &#8381;<span class="catalog-item__price-small">/кг</span></p>
         <h3 class="catalog-item title">Сливочное крем-брюле с карамельной подливкой </h3>
       </article>
     </section>
@@ -179,7 +179,7 @@
 
     <article class="news">
       <h2 class="news__title">Новое в нашем блоге</h2>
-      <p class="news__item"><a href="">10 способов сервировки фруктовых щербетов к столу </a></p>
+      <a class="news__item href=">10 способов сервировки фруктовых щербетов к столу </a>
     </article>
     <!-- /.news -->
     <section class="subscription">
@@ -192,7 +192,7 @@
         <label class="visually-hidden" for="subscription-email-field">Электронная почта</label>
         <input class="subscription__email" type="email" name="subscription-email"
                id="subscription-email-field" placeholder="email@example.com" required>
-        <button class="button_red subscription__button" type="submit">Отправить</button>
+        <button class="button-red subscription__button" type="submit">Отправить</button>
       </form>
     </section>
     <!-- /.subscription -->
@@ -233,7 +233,7 @@
             В свободной форме
           </textarea>
         </p>
-        <button type="submit" class="button_red feedback__button">Отправить</button>
+        <button type="submit" class="button-red feedback__button">Отправить</button>
       </form>
     </section>
     <!-- /.feedback -->
@@ -242,10 +242,10 @@
     <section class="social">
       <h3 class="visually-hidden">Наши социальные сети</h3>
       <ul class="social__list">
-        <li><a href="#" class="social__link social__fb"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a href="#" class="social__link social__vk"><span class="visually-hidden">Vkontakte</span></a></li>
-        <li><a href="#" class="social__link social__inst"><span class="visually-hidden">Instagram</span></a></li>
-        <li><a href="#" class="social__link social__twitter"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a href="#" class="social__link social__link_fb"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a href="#" class="social__link social__link_vk"><span class="visually-hidden">Vkontakte</span></a></li>
+        <li><a href="#" class="social__link social__link_inst"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a href="#" class="social__link social__link_twitter"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
     </section>
     <!-- /.social -->
@@ -253,10 +253,10 @@
     <section class="footer-nav">
       <h3 class="visually-hidden">Дополнительная информация</h3>
       <ul class="footer-nav__list">
-        <li><a href="#" class="footer-nav__link footer-nav__link_withheard">Для поставщиков</a></li>
-        <li><a href="#" class="footer-nav__link">Наши документы</a></li>
-        <li><a href="#" class="footer-nav__link">О производстве</a></li>
-        <li><a href="#" class="footer-nav__link">Экологические стандарты</a></li>
+        <li><a href="#" class="footer-nav__link footer-nav__link_withheard link-white">Для поставщиков</a></li>
+        <li><a href="#" class="footer-nav__link link-white">Наши документы</a></li>
+        <li><a href="#" class="footer-nav__link link-white">О производстве</a></li>
+        <li><a href="#" class="footer-nav__link link-white">Экологические стандарты</a></li>
       </ul>
     </section>
     <!-- /.footer-nav -->
@@ -265,7 +265,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright__logo">
         <img src="img/footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
       </a>
-      <p class="descr">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019 </p>
+      <p class="descr">Сделано в <a class="link-white" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019 </p>
     </section>
     <!-- /.footer-copyright -->
   </footer>
