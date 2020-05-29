@@ -1,19 +1,22 @@
 /* Variables */
 :root {
   --basic-black: #323232;
-  --basic-white: #ffffff;
-  --light-light-grey: #EDEDED;
-  --basic-red: #e84d37;
-  --dark-red: #D07058;
-  --basic-red-light: #FFBC9E;
-  --light-green: #849D8F;
-  --light-blue: #8996A6;
-  --basic-brown: #9D8B84;
-  --beige: #F8F7F4;
   --dark-grey: #5a5a5a;
+  --light-grey: #EDEDED;
+  --light-light-grey: #F8F7F4;
+  --basic-white: #ffffff;
   --basic-white-20: rgba(255, 255, 255, 0.2);
   --basic-white-40: rgba(255, 255, 255, 0.4);
   --basic-white-80: rgba(255, 255, 255, 0.8);
+  --basic-red: #e84d37;
+  --dark-red: #D07058;
+  --dark-pink: #3B0B24;
+  --basic-red-light: #FFBC9E;
+  --beige: #f5f5dc;
+  --light-green: #849D8F;
+  --light-blue: #8996A6;
+  --basic-brown: #9D8B84;
+  --dark-brown: #3B0B17;
 }
 
 /* Global */
@@ -109,7 +112,7 @@ ul {
   border-radius: 26px;
 }
 .header-nav__link:active {
-  background: var(--light-light-grey);
+  background: var(--light-grey);
   box-shadow: inset 0 2px 1px #696969;
   border-radius: 26px;
 }
@@ -174,10 +177,14 @@ ul {
 .slider__button_active {
   background: var(--basic-white);
 }
+.slider__button_active:focus, .slider__button_active:hover {
+  background: var(--basic-white);
+}
 
 /* gifts */
 .gift {
   border-radius: 16px;
+  background-repeat: no-repeat;
 }
 .gift__title {
   font-weight: 700;
@@ -189,20 +196,19 @@ ul {
 }
 .gift_raspberry {
   background-image: url(../img/index/raps_bg.jpg);
-  background-repeat: no-repeat;
-  background-color: darkred;
+  background-color: var(--dark-pink);
 }
 .gift_chocolate {
   background-image: url(../img/index/choco_bg.jpg);
   background-repeat: no-repeat;
-  background-color: saddlebrown;
+  background-color: var(--dark-brown);
 }
 
 /* advantages */
 .advantages {
   background-image: url("../img/adv/pattern.png");
   background-repeat: repeat;
-  background-color: #f5f5dc;
+  background-color: var(--beige);
   color: var(--basic-black);
 }
 .advantages__overview {
@@ -237,7 +243,7 @@ ul {
 
 /* subscription */
 .subscription {
-  background-color: var(--beige);
+  background-color: var(--light-light-grey);
   color: var(--dark-grey);
 }
 
@@ -246,10 +252,10 @@ ul {
   background: var(--basic-white);
   border-radius: 16px;
   color: var(--basic-black);
-}
-.map-contacts__address {
   font-size: 14px;
   line-height: 20px;
+}
+.map-contacts__address {
   font-style: normal;
 }
 .map-contacts__bold {
@@ -295,6 +301,10 @@ ul {
   width: 32px;
   height: 32px;
   display: block;
+  opacity: 80%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background-repeat: no-repeat;
 }
 .social__link_fb {
   background-image: url(../img/footer/fb.svg);
@@ -307,6 +317,12 @@ ul {
 }
 .social__link_twitter {
   background-image: url(../img/footer/twitter.svg);
+}
+.social__link:focus, .social__link:hover {
+  opacity: 100%;
+}
+.social__link:active {
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 /* catalog */
@@ -328,6 +344,7 @@ ul {
 
 /* filter */
 .filter__title {
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
@@ -345,7 +362,8 @@ ul {
 }
 .filter__button {
   background: var(--basic-white-20);
-  border: 2px solid #FFFFFF;
+  box-shadow: inset 2px 2px 0 #FFFFFF, inset -2px -2px 0 #FFFFFF, inset 2px -2px 0 #FFFFFF, inset -2px 2px 0 #FFFFFF;
+  border: none;
   border-radius: 20px;
   color: var(--basic-white);
 }
@@ -392,10 +410,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
 }
 .pages__item:focus, .pages__item:hover {
   background: var(--basic-white-20);
-  border-radius: 50%;
 }
 .pages__item:active {
   background: var(--basic-white);
@@ -404,7 +422,6 @@ ul {
 .pages__item_active {
   background: var(--basic-white);
   color: var(--basic-black);
-  border-radius: 50%;
 }
 .pages__item_active:focus, .pages__item_active:hover {
   background: var(--basic-white);
@@ -415,18 +432,17 @@ ul {
   border: none;
   width: 7px;
   height: 12px;
+  background-repeat: no-repeat;
 }
 .pages__button:focus, .pages__button:hover {
   outline: none;
 }
 .pages__button_back {
   background-image: url(../img/catalog/icon-right-small.svg);
-  background-repeat: no-repeat;
   transform: rotate(-180deg);
 }
 .pages__button_forward {
   background-image: url(../img/catalog/icon-right-small.svg);
-  background-repeat: no-repeat;
 }
 .pages__button_disabled {
   opacity: 20%;
