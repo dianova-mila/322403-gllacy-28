@@ -12,6 +12,8 @@
   --beige: #F8F7F4;
   --dark-grey: #5a5a5a;
   --basic-white-20: rgba(255, 255, 255, 0.2);
+  --basic-white-40: rgba(255, 255, 255, 0.4);
+  --basic-white-80: rgba(255, 255, 255, 0.8);
 }
 
 /* Global */
@@ -92,6 +94,7 @@ ul {
 .header__button:focus, .header__button:hover {
   color: var(--basic-black);
   background: var(--basic-white);
+  outline: none;
 }
 .header__button_full {
   background-color: var(--basic-white);
@@ -142,6 +145,59 @@ ul {
   line-height: 24px;
 }
 
+/* slider */
+.slider-item__text {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.slider-item__link {
+  font-size: 32px;
+  line-height: 44px;
+}
+.slider__button {
+  width: 21px;
+  height: 21px;
+  display: block;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  background: transparent;
+}
+.slider__button:focus, .slider__button:hover {
+  background: var(--basic-white-40);
+  outline: none;
+}
+.slider__button:active {
+  background: var(--basic-white);
+}
+.slider__button_active {
+  background: var(--basic-white);
+}
+
+/* gifts */
+.gift {
+  border-radius: 16px;
+}
+.gift__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+.gift__text {
+  font-size: 18px;
+}
+.gift_raspberry {
+  background-image: url(../img/index/raps_bg.jpg);
+  background-repeat: no-repeat;
+  background-color: darkred;
+}
+.gift_chocolate {
+  background-image: url(../img/index/choco_bg.jpg);
+  background-repeat: no-repeat;
+  background-color: saddlebrown;
+}
+
 /* advantages */
 .advantages {
   background-image: url("../img/adv/pattern.png");
@@ -183,6 +239,24 @@ ul {
 .subscription {
   background-color: var(--beige);
   color: var(--dark-grey);
+}
+
+/* map */
+.map-contacts {
+  background: var(--basic-white);
+  border-radius: 16px;
+  color: var(--basic-black);
+}
+.map-contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+.map-contacts__bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
 }
 
 /* feedback */
@@ -252,6 +326,40 @@ ul {
   color: var(--basic-white);
 }
 
+/* filter */
+.filter__title {
+  font-size: 14px;
+  line-height: 16px;
+}
+.filter__input {
+  background: var(--basic-white-20);
+  border: none;
+  border-radius: 20px;
+}
+.filter__sort {
+  color: var(--basic-white);
+}
+.filter__sort:focus, .filter__sort:hover {
+  outline: none;
+  color: var(--basic-black);
+}
+.filter__button {
+  background: var(--basic-white-20);
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  color: var(--basic-white);
+}
+.filter__button:focus, .filter__button:hover {
+  outline: none;
+  background: var(--basic-white);
+  color: var(--basic-black);
+}
+.filter__button:active {
+  border: none;
+  box-shadow: inset 0 2px 1px #696969;
+}
+
+/* catalog */
 .catalog-title {
   font-weight: 700;
   font-size: 35px;
@@ -272,4 +380,54 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
+}
+
+/* pages */
+.pages__item {
+  color: var(--basic-white);
+  line-height: 18px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pages__item:focus, .pages__item:hover {
+  background: var(--basic-white-20);
+  border-radius: 50%;
+}
+.pages__item:active {
+  background: var(--basic-white);
+  color: var(--basic-black);
+}
+.pages__item_active {
+  background: var(--basic-white);
+  color: var(--basic-black);
+  border-radius: 50%;
+}
+.pages__item_active:focus, .pages__item_active:hover {
+  background: var(--basic-white);
+  color: var(--basic-black);
+}
+.pages__button {
+  background: transparent;
+  border: none;
+  width: 7px;
+  height: 12px;
+}
+.pages__button:focus, .pages__button:hover {
+  outline: none;
+}
+.pages__button_back {
+  background-image: url(../img/catalog/icon-right-small.svg);
+  background-repeat: no-repeat;
+  transform: rotate(-180deg);
+}
+.pages__button_forward {
+  background-image: url(../img/catalog/icon-right-small.svg);
+  background-repeat: no-repeat;
+}
+.pages__button_disabled {
+  opacity: 20%;
 }

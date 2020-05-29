@@ -106,7 +106,7 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filter__item">
           <label class="filter__title" for="filter-sort-field">Сортировка:</label>
-          <select class="filter__input" name="filter-sort" id="filter-sort-field">
+          <select class="filter__input filter__sort" name="filter-sort" id="filter-sort-field">
             <option value="popular" selected>по популярности</option>
             <option value="cheap">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
@@ -239,15 +239,19 @@
     <!-- /.catalog -->
 
     <div class="pages">
-      <button type="button" class="back" disabled>Назад</button>
+      <button type="button" class="pages__button pages__button_back pages__button_disabled">
+        <span class="visually-hidden">Назад</span>
+      </button>
       <ul>
-        <li class="pages_active"><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
+        <li><a class="pages__item pages__item_active">1</a></li>
+        <li><a class="pages__item" href="#">2</a></li>
+        <li><a class="pages__item" href="#">3</a></li>
+        <li><a class="pages__item" href="#">4</a></li>
+        <li><a class="pages__item" href="#">5</a></li>
       </ul>
-      <button type="button" class="forward">Вперед</button>
+      <button type="button" class="pages__button pages__button_forward">
+        <span class="visually-hidden">Вперед</span>
+      </button>
     </div>
     <!-- /.pages -->
   </main>
