@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Каталог - Gllacy Shop</title>
@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="header">
+<body page-body>
+  <header class="header container">
     <nav class="header-nav">
       <a href="index.html" class="header-nav__logo">
         <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
-      <ul>
+      <ul class="header-nav__list">
         <li class="header-nav__item">
           <a href="#" class="header-nav__link header-nav__link_catalog header-nav__link_active">Каталог</a>
           <ul class="header-catalog">
@@ -93,7 +93,7 @@
   </header>
   <!-- /.header -->
 
-  <main>
+  <main class="container">
     <ul class="breadcrumbs">
       <li><a class="breadcrumbs__item" href="index.html">Главная</a></li>
       <li><a class="breadcrumbs__item" href="#">Каталог</a></li>
@@ -242,7 +242,7 @@
       <button type="button" class="pages__button pages__button_back pages__button_disabled">
         <span class="visually-hidden">Назад</span>
       </button>
-      <ul>
+      <ul class="pages__list">
         <li><a class="pages__item pages__item_active">1</a></li>
         <li><a class="pages__item" href="#">2</a></li>
         <li><a class="pages__item" href="#">3</a></li>
@@ -256,7 +256,7 @@
     <!-- /.pages -->
   </main>
 
-  <footer class="footer">
+  <footer class="footer container">
     <section class="social">
       <h3 class="visually-hidden">Наши социальные сети</h3>
       <ul class="social__list">
