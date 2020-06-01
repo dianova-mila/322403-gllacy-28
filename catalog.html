@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body page-body>
+<body class="page-body">
   <header class="header container">
     <nav class="header-nav">
       <a href="index.html" class="header-nav__logo">
@@ -33,63 +33,65 @@
     </nav>
     <!-- /.header-nav -->
 
-    <ul class="header-actions">
-      <li>
-        <button type="button" class="header__button header-actions__search">Поиск</button>
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-field">Поиск</label>
-          <input class="header-search__input" type="text" name="search" id="search-field" placeholder="Крем-брюле">
-        </form>
-      </li>
-      <li>
-        <button type="button" class="header__button header-actions__singin">Вход</button>
-        <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
-          <p class="header-signin__item">
-            <label class="visually-hidden" for="signin-login">Электронная почта</label>
-            <input class="header-signin__login" type="email" name="login" id="signin-login" placeholder="email@example.com">
-          </p>
-          <p class="header-signin__item">
-            <label class="visually-hidden" for="signin-password">Пароль</label>
-            <input class="header-signin__password" type="password" name="password" id="signin-password" placeholder="••••••••">
-          </p>
-          <button type="submit" class="button-red header-signin__button">Войти</button>
-          <p class="header-signin__links">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </p>
-        </form>
-      </li>
-      <li>
-        <button type="button" class="header__button header__button_full">2 товара</button>
-        <section class="header-backet">
-          <table class="header-backet__list">
-            <tr class="header-backet__item">
-              <td><button type="button" class="header-backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
-              <td><img src="img/header/ice-orange-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х <span class="light-grey">200 руб.</span></td>
-              <td>300 руб.</td>
-            </tr>
-            <tr class="header-backet__item">
-              <td><button type="button" class="header-backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
-              <td><img src="img/header/ice-str-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х <span class="light-grey">300 руб.</span></td>
-              <td>450 руб.</td>
-            </tr>
-          </table>
-          <p>Итого: 750 руб.</p>
-          <button type="button" class="button-red header-backet__button">Оформить заказ</button>
-        </section>
-      </li>
-    </ul>
-    <!-- /.header-actions -->
+   <div class="header-right-wrapper">
+     <ul class="header-actions">
+       <li>
+         <button type="button" class="header__button header-actions__search header-actions__item">Поиск</button>
+         <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+           <label class="visually-hidden" for="search-field">Поиск</label>
+           <input class="header-search__input" type="text" name="search" id="search-field" placeholder="Крем-брюле">
+         </form>
+       </li>
+       <li>
+         <button type="button" class="header__button header-actions__singin header-actions__item">Вход</button>
+         <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
+           <p class="header-signin__item">
+             <label class="visually-hidden" for="signin-login">Электронная почта</label>
+             <input class="header-signin__login" type="email" name="login" id="signin-login" placeholder="email@example.com">
+           </p>
+           <p class="header-signin__item">
+             <label class="visually-hidden" for="signin-password">Пароль</label>
+             <input class="header-signin__password" type="password" name="password" id="signin-password" placeholder="••••••••">
+           </p>
+           <button type="submit" class="button-red header-signin__button">Войти</button>
+           <p class="header-signin__links">
+             <a href="#">Забыли пароль?</a>
+             <a href="#">Новая регистрация</a>
+           </p>
+         </form>
+       </li>
+       <li>
+         <button type="button" class="header__button header__button_full header-actions__item">2 товара</button>
+         <section class="header-backet">
+           <table class="header-backet__list">
+             <tr class="header-backet__item">
+               <td><button type="button" class="header-backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
+               <td><img src="img/header/ice-orange-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
+               <td>Пломбир с апельсиновым джемом</td>
+               <td>1,5 кг х <span class="light-grey">200 руб.</span></td>
+               <td>300 руб.</td>
+             </tr>
+             <tr class="header-backet__item">
+               <td><button type="button" class="header-backet__cross"><img src="img/header/cross-small.svg" width="11" height="11" alt="Удалить"></button></td>
+               <td><img src="img/header/ice-str-mini.png" width="33" height="33" alt="Фотография мороженого"></td>
+               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+               <td>1,5 кг х <span class="light-grey">300 руб.</span></td>
+               <td>450 руб.</td>
+             </tr>
+           </table>
+           <p>Итого: 750 руб.</p>
+           <button type="button" class="button-red header-backet__button">Оформить заказ</button>
+         </section>
+       </li>
+     </ul>
+     <!-- /.header-actions -->
 
-    <p class="header-contacts">
-      с 10 до 20, ежедневно<br>
-      <a class="header-contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
-    </p>
-    <!-- /.header-contacts -->
+     <p class="header-contacts">
+       с 10 до 20, ежедневно<br>
+       <a class="header-contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
+     </p>
+     <!-- /.header-contacts -->
+   </div>
   </header>
   <!-- /.header -->
 

@@ -33,52 +33,54 @@
     </nav>
     <!-- /.header-nav -->
 
-    <ul class="header-actions">
-      <li>
-        <button type="button" class="header__button header-actions__search">Поиск</button>
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-field">Поиск</label>
-          <input class="header-search__input" type="text" name="search" id="search-field"
-                 placeholder="Крем-брюле" required>
-        </form>
-      </li>
-      <li>
-        <button type="button" class="header__button header-actions__signin">Вход</button>
-        <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
-          <p class="header-signin__item">
-            <label class="visually-hidden" for="signin-login">Электронная почта</label>
-            <input class="header-signin__login" type="email" name="login" id="signin-login"
-                   placeholder="email@example.com" required>
-          </p>
-          <p class="header-signin__item">
-            <label class="visually-hidden" for="signin-password">Пароль</label>
-            <input class="header-signin__password" type="password" name="password" id="signin-password"
-                   placeholder="••••••••" required>
-          </p>
-          <button type="submit" class="button-red header-signin__button">Войти</button>
-          <p class="header-signin__links">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </p>
-        </form>
-      </li>
-      <li>
-        <button type="button" class="header__button header__button_empty">Пусто</button>
-      </li>
-    </ul>
-    <!-- /.header-actions -->
+    <div class="header-right-wrapper">
+      <ul class="header-actions">
+        <li>
+          <button type="button" class="header__button header-actions__search header-actions__item">Поиск</button>
+          <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-field">Поиск</label>
+            <input class="header-search__input" type="text" name="search" id="search-field"
+                   placeholder="Крем-брюле" required>
+          </form>
+        </li>
+        <li>
+          <button type="button" class="header__button header-actions__signin header-actions__item">Вход</button>
+          <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
+            <p class="header-signin__item">
+              <label class="visually-hidden" for="signin-login">Электронная почта</label>
+              <input class="header-signin__login" type="email" name="login" id="signin-login"
+                     placeholder="email@example.com" required>
+            </p>
+            <p class="header-signin__item">
+              <label class="visually-hidden" for="signin-password">Пароль</label>
+              <input class="header-signin__password" type="password" name="password" id="signin-password"
+                     placeholder="••••••••" required>
+            </p>
+            <button type="submit" class="button-red header-signin__button">Войти</button>
+            <p class="header-signin__links">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </p>
+          </form>
+        </li>
+        <li>
+          <button type="button" class="header__button header__button_empty header-actions__item">Пусто</button>
+        </li>
+      </ul>
+      <!-- /.header-actions -->
 
-    <p class="header-contacts">
-      с 10 до 20, ежедневно<br>
-      <a class="header-contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
-    </p>
-    <!-- /.header-contacts -->
+      <p class="header-contacts">
+        с 10 до 20, ежедневно<br>
+        <a class="header-contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
+      </p>
+      <!-- /.header-contacts -->
+    </div>
   </header>
   <!-- /.header -->
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
 
-    <section class="slider">
+    <section class="slider container">
       <article class="slider__item slider__item_1 slider-item">
         <figure>
           <img class="slider-item__img"  src="img/slider/ice_1-1.png" height="584" width="372" alt="Фотография мороженого">
@@ -115,15 +117,15 @@
     </section>
     <!-- /.slider -->
 
-    <section class="gifts">
-      <article class="gift gift_raspberry">
+    <section class="gifts index-columns container">
+      <article class="gift gift_raspberry index-columns__item">
         <h2 class="gift__title">Малинка даром!</h2>
         <p class="gift__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
           маринового варенья бесплатно.</p>
         <a href="#" class="button-red">Хочу варенье!</a>
       </article>
       <!-- /.gift -->
-      <article class="gift gift_chocolate">
+      <article class="gift gift_chocolate index-columns__item">
         <h2 class="gift__title">Шоколадки даром!</h2>
         <p class="gift__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
           присыпки совершенно бесплатно.</p>
@@ -133,7 +135,7 @@
     </section>
     <!-- /.gifts -->
 
-    <section class="hits">
+    <section class="hits container">
       <h3 class="visually-hidden">Наши хиты среди мороженого</h3>
       <article class="catalog-item catalog-item_hit">
         <img src="img/catalog/ice-orange.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
@@ -158,32 +160,38 @@
     </section>
     <!-- /.hits -->
 
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="visually-hidden">Приемущества</h2>
-      <p class="advantages__overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства
-        на развес</p>
-      <p class="advantages__item">
-        Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
-        и проверенных временем технологий.</p>
-      <p class="advantages__item">
-        Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
-        долговременное сотрудничество.</p>
-      <p class="advantages__item">
-        Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-        ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-      <p class="advantages__item">
-        Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-        растаять в пути и позволяет сохранить превосходный вкус.</p>
+      <ul class="advantages__list">
+        <li class="advantages__overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства
+          на развес</li>
+        <li class="advantages__item">
+          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+          и проверенных временем технологий.
+        </li>
+        <li class="advantages__item">
+          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
+          долговременное сотрудничество.
+        </li>
+        <li class="advantages__item">
+          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+          ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+        </li>
+        <li class="advantages__item">
+          Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+          растаять в пути и позволяет сохранить превосходный вкус.
+        </li>
+      </ul>
     </section>
     <!-- /.advantages -->
 
-    <div class="index-columns">
-      <article class="news">
+    <div class="index-columns container">
+      <article class="news index-columns__item">
         <h2 class="news__title">Новое в нашем блоге</h2>
         <a class="news__item" href="#">10 способов сервировки фруктовых щербетов к столу </a>
       </article>
       <!-- /.news -->
-      <section class="subscription">
+      <section class="subscription index-columns__item">
         <h2 class="visually-hidden">Подписка</h2>
         <p class="subscription__offer">
           Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
