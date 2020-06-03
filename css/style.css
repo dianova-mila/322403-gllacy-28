@@ -49,24 +49,6 @@ img {
   height: auto;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-fieldset {
-  border: none;
-}
-
 .page {
   height: 100%;
 }
@@ -80,8 +62,10 @@ fieldset {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
-  padding: 0 14px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 27px;
+  padding-left: 27px;
 }
 
 .grid-row {
@@ -89,12 +73,8 @@ fieldset {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-bottom: 40px;
-}
-
-.col-2 {
-  width: 50%;
-  padding-left: 13px;
-  padding-right: 13px;
+  margin-left: -13px;
+  margin-right: -13px;
 }
 
 .col-1 {
@@ -103,7 +83,14 @@ fieldset {
   padding-right: 13px;
 }
 
-.wrapper {
+.col-2 {
+  width: 50%;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.col-3 {
+  width: 75%;
   padding-left: 13px;
   padding-right: 13px;
 }
@@ -147,9 +134,11 @@ fieldset {
 .header {
   font-weight: 700;
   line-height: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+}
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .header-right-wrapper {
   display: flex;
@@ -249,10 +238,6 @@ fieldset {
 }
 
 /* slider */
-.slider {
-  padding-left: 13px;
-  padding-right: 13px;
-}
 .slider-item__text {
   font-weight: 700;
   font-size: 60px;
@@ -271,6 +256,9 @@ fieldset {
 }
 .slider-control {
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .slider__button {
   width: 21px;
@@ -334,6 +322,7 @@ fieldset {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  list-style: none;
 }
 .advantages__overview {
   font-weight: 500;
@@ -401,9 +390,10 @@ fieldset {
 }
 
 /* footer */
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .footer-nav {
   font-size: 13px;
@@ -415,8 +405,9 @@ fieldset {
   justify-content: center;
 }
 .footer-nav__link {
-  min-width: 162px;
   display: block;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .footer-nav__link_withheard {
   font-weight: 700;
@@ -432,7 +423,6 @@ fieldset {
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
-  padding-left: 192px;
 }
 
 .social__list {
@@ -504,6 +494,9 @@ fieldset {
 .filter-grid {
   display: flex;
   flex-wrap: wrap;
+}
+.filter__item {
+  border: none;
 }
 .filter__title {
   font-weight: 500;

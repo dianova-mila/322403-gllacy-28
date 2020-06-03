@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-  <div class="container">
-    <div class="wrapper">
-      <header class="header">
-        <nav class="header-nav">
+  <header class="header container">
+    <div class="grid-row">
+      <nav class="header-nav col-3">
           <a class="header-nav__logo">
             <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
           </a>
@@ -33,9 +32,7 @@
             <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a></li>
           </ul>
         </nav>
-        <!-- /.header-nav -->
-
-        <div class="header-right-wrapper">
+      <div class="header-right-wrapper col-1">
           <ul class="header-actions">
             <li>
               <button type="button" class="header__button header-actions__search header-actions__item">Поиск</button>
@@ -77,15 +74,13 @@
           </p>
           <!-- /.header-contacts -->
         </div>
-      </header>
-      <!-- /.header -->
     </div>
-  </div>
+  </header>
+  <!-- /.header -->
   <main>
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
 
-    <div class="container">
-      <section class="slider">
+    <section class="slider container">
         <article class="slider__item slider__item_1 slider-item">
           <figure>
             <img class="slider-item__img"  src="img/slider/ice_1-1.png" height="584" width="372" alt="Фотография мороженого">
@@ -121,10 +116,10 @@
         </ul>
       </section>
       <!-- /.slider -->
-    </div>
 
-    <div class="container">
-      <section class="gifts grid-row">
+
+    <section class="gifts container">
+      <div class="grid-row">
         <div class="col-2">
           <article class="gift gift_raspberry">
             <h2 class="gift__title">Малинка даром!</h2>
@@ -143,9 +138,9 @@
           </article>
           <!-- /.gift -->
         </div>
-      </section>
-      <!-- /.gifts -->
-    </div>
+      </div>
+    </section>
+    <!-- /.gifts -->
 
     <section class="hits container">
       <h3 class="visually-hidden">Наши хиты среди мороженого</h3>
@@ -182,8 +177,7 @@
     </section>
     <!-- /.hits -->
 
-    <div class="container">
-      <div class="wrapper advantages-wrapper">
+    <div class="advantages-wrapper container">
         <section class="advantages">
           <h2 class="visually-hidden">Приемущества</h2>
           <p class="advantages__overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства
@@ -209,7 +203,6 @@
         </section>
         <!-- /.advantages -->
       </div>
-    </div>
 
     <div class="container">
       <div class="grid-row">
@@ -281,41 +274,39 @@
     </section>
     <!-- /.feedback -->
   </main>
-  <div class="container">
-    <div class="wrapper">
-      <footer class="footer">
-        <section class="social">
-          <h3 class="visually-hidden">Наши социальные сети</h3>
-          <ul class="social__list">
-            <li><a href="#" class="social__link social__link_fb"><span class="visually-hidden">Facebook</span></a></li>
-            <li><a href="#" class="social__link social__link_vk"><span class="visually-hidden">Vkontakte</span></a></li>
-            <li><a href="#" class="social__link social__link_inst"><span class="visually-hidden">Instagram</span></a></li>
-            <li><a href="#" class="social__link social__link_twitter"><span class="visually-hidden">Twitter</span></a></li>
-          </ul>
-        </section>
-        <!-- /.social -->
+  <footer class="footer container">
+    <div class="grid-row">
+      <section class="social col-1">
+        <h3 class="visually-hidden">Наши социальные сети</h3>
+        <ul class="social__list ">
+          <li><a href="#" class="social__link social__link_fb"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#" class="social__link social__link_vk"><span class="visually-hidden">Vkontakte</span></a></li>
+          <li><a href="#" class="social__link social__link_inst"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a href="#" class="social__link social__link_twitter"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
+      </section>
+      <!-- /.social -->
 
-        <section class="footer-nav">
-          <h3 class="visually-hidden">Дополнительная информация</h3>
-          <ul class="footer-nav__list">
-            <li><a href="#" class="footer-nav__link footer-nav__link_withheard link-white">Для поставщиков</a></li>
-            <li><a href="#" class="footer-nav__link link-white">Наши документы</a></li>
-            <li><a href="#" class="footer-nav__link link-white">О производстве</a></li>
-            <li><a href="#" class="footer-nav__link link-white">Экологические стандарты</a></li>
-          </ul>
-        </section>
-        <!-- /.footer-nav -->
+      <section class="footer-nav col-2">
+        <h3 class="visually-hidden">Дополнительная информация</h3>
+        <ul class="footer-nav__list ">
+          <li><a href="#" class="footer-nav__link footer-nav__link_withheard link-white">Для поставщиков</a></li>
+          <li><a href="#" class="footer-nav__link link-white">Наши документы</a></li>
+          <li><a href="#" class="footer-nav__link link-white">О производстве</a></li>
+          <li><a href="#" class="footer-nav__link link-white">Экологические стандарты</a></li>
+        </ul>
+      </section>
+      <!-- /.footer-nav -->
 
-        <section class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright__logo">
-            <img src="img/footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-          </a>
-          <p class="descr">Сделано в <a class="link-white" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019 </p>
-        </section>
-        <!-- /.footer-copyright -->
-      </footer>
-      <!-- /.footer -->
+      <section class="footer-copyright col-1">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright__logo">
+          <img src="img/footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
+        <p class="descr">Сделано в <a class="link-white" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019 </p>
+      </section>
+      <!-- /.footer-copyright -->
     </div>
-  </div>
+    </footer>
+  <!-- /.footer -->
   </body>
 </html>
