@@ -12,58 +12,81 @@
   </head>
   <body class="page-body">
   <header class="header container">
-    <div class="grid-row">
+    <div class="grid-row grid-row_align_start">
       <nav class="header-nav col-3">
           <a class="header-nav__logo">
             <img src="img/header/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
           </a>
           <ul class="header-nav__list">
-            <li class="header-nav__item">
+            <li class="header-nav__item header-nav__item_catalog">
               <a href="#" class="header-nav__link header-nav__link_catalog">Каталог</a>
               <ul class="header-catalog">
-                <li class="header-catalog__new"><a href="#">Новинки</a></li>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
+                <li><a class="header-catalog__item header-catalog__item_new" href="#">Новинки</a></li>
+                <li><a class="header-catalog__item" href="catalog.html">Сливочное</a></li>
+                <li><a class="header-catalog__item" href="#">Щербеты</a></li>
+                <li><a class="header-catalog__item" href="#">Фруктовый лед</a></li>
+                <li><a class="header-catalog__item" href="#">Мелорин</a></li>
               </ul>
             </li>
             <li class="header-nav__item"><a class="header-nav__link" href="#">Доставка и оплата</a></li>
             <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a></li>
           </ul>
         </nav>
-      <div class="header-right-wrapper col-1">
+      <div class="col-1">
           <ul class="header-actions">
             <li>
-              <button type="button" class="header__button header-actions__search header-actions__item">Поиск</button>
+              <button type="button" class="header-actions__item header-actions__item_search">
+                <span class="visually-hidden">Поиск</span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="17" height="17" viewBox="0 0 17 17">
+                  <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465
+                     6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11
+                     4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+              </button>
               <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="search-field">Поиск</label>
-                <input class="header-search__input" type="text" name="search" id="search-field"
+                <input class="header-actions__input header-actions__input_search" type="text" name="search" id="search-field"
                        placeholder="Крем-брюле" required>
               </form>
             </li>
             <li>
-              <button type="button" class="header__button header-actions__signin header-actions__item">Вход</button>
+              <button type="button" class="header-actions__item header-actions__item_signin">
+                <svg class="header-actions__icon" xmlns="http://www.w3.org/2000/svg"
+                     width="21" height="19" viewBox="0 0 21 19">
+                  <g fill="#000">
+                    <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                    <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                  </g></svg>
+                Вход
+              </button>
               <form  class="header-signin" action="https://echo.htmlacademy.ru" method="post">
                 <p class="header-signin__item">
                   <label class="visually-hidden" for="signin-login">Электронная почта</label>
-                  <input class="header-signin__login" type="email" name="login" id="signin-login"
+                  <input class="header-actions__input header-signin__login" type="email" name="login" id="signin-login"
                          placeholder="email@example.com" required>
                 </p>
                 <p class="header-signin__item">
                   <label class="visually-hidden" for="signin-password">Пароль</label>
-                  <input class="header-signin__password" type="password" name="password" id="signin-password"
+                  <input class="header-actions__input header-signin__password" type="password" name="password" id="signin-password"
                          placeholder="••••••••" required>
                 </p>
-                <button type="submit" class="button-red header-signin__button">Войти</button>
+                <div>
+                  <button type="submit" class="button-red header-signin__button">Войти</button>
+                </div>
                 <p class="header-signin__links">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
+                  <a class="header-signin__link" href="#">Забыли пароль?</a>
+                  <a class="header-signin__link" href="#">Новая регистрация</a>
                 </p>
               </form>
             </li>
             <li>
-              <button type="button" class="header__button header__button_empty header-actions__item">Пусто</button>
+              <button type="button" class="header-actions__item header-actions__item_empty">
+                <svg class="header-actions__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+                  <g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372
+                   13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/>
+                    <circle cx="15.984" cy="18" r="2"/></g></svg>
+                Пусто
+              </button>
             </li>
           </ul>
           <!-- /.header-actions -->
@@ -180,23 +203,23 @@
     <div class="advantages-wrapper container">
         <section class="advantages">
           <h2 class="visually-hidden">Приемущества</h2>
-          <p class="advantages__overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства
+          <p class="advantages__overview">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства
             на развес</p>
           <ul class="advantages__list">
-            <li class="advantages__item col-2">
+            <li class="advantages__item advantages__item_production col-2">
               Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
               и проверенных временем технологий.
             </li>
-            <li class="advantages__item col-2">
+            <li class="advantages__item advantages__item_purchase col-2">
               Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
               долговременное сотрудничество.
             </li>
-            <li class="advantages__item col-2">
+            <li class="advantages__item advantages__item_natural col-2">
               Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
               ингредиенты и добавки произведены из натурального, экологически чистого сырья.
             </li>
-            <li class="advantages__item col-2">
-              Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+            <li class="advantages__item advantages__item_delivery col-2">
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
               растаять в пути и позволяет сохранить превосходный вкус.
             </li>
           </ul>
@@ -209,25 +232,27 @@
         <div class="col-2">
           <article class="news">
             <h2 class="news__title">Новое в нашем блоге</h2>
-            <a class="news__item" href="#">10 способов сервировки фруктовых щербетов к столу </a>
+            <a class="news__item" href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу </a>
           </article>
           <!-- /.news -->
         </div>
         <div class="col-2">
-          <section class="subscription">
-            <h2 class="visually-hidden">Подписка</h2>
-            <p class="subscription__offer">
-              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="subscription-email-field">Электронная почта</label>
-              <input class="subscription__email" type="email" name="subscription-email"
-                     id="subscription-email-field" placeholder="email@example.com" required>
-              <button class="button-red subscription__button" type="submit">Отправить</button>
-            </form>
-          </section>
-          <!-- /.subscription -->
+          <div class="subscription-wrapper">
+            <section class="subscription">
+              <h2 class="visually-hidden">Подписка</h2>
+              <p class="subscription__offer">
+                Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="subscription-email-field">Электронная почта</label>
+                <input class="subscription__email" type="email" name="subscription-email"
+                       id="subscription-email-field" placeholder="email@example.com" required>
+                <button class="button-red subscription__button" type="submit">Отправить</button>
+              </form>
+            </section>
+            <!-- /.subscription -->
+          </div>
         </div>
       </div>
     </div>
@@ -241,7 +266,7 @@
           Адрес главного офиса и офлайн-магазина:<br>
           <span class="map-contacts__bold">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
         </address>
-        <p>
+        <p class="map__text">
           Для заказов по телефону:<br>
           <a class="map-contacts__bold" href="tel:+78124502525">8 812 450-25-25</a><br>
           (с 10 до 20 ежедневно)
@@ -257,17 +282,15 @@
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback__item">
           <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
-          <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Имя Фамилия" required>
+          <input class="feedback__input" type="text" name="feedback-name" id="feedback-name-field" placeholder="Имя Фамилия" required>
         </p>
         <p class="feedback__item">
           <label class="visually-hidden" for="feedback-email-field">Электронная почта</label>
-          <input type="email" name="feedback-email" id="feedback-email-field" placeholder="email@example.com" required>
+          <input class="feedback__input" type="email" name="feedback-email" id="feedback-email-field" placeholder="email@example.com" required>
         </p>
-        <p class="feedback__message">
+        <p class="feedback__item">
           <label class="visually-hidden" for="feedback-text-field">Текст сообщения</label>
-          <textarea name="feedback-text" id="feedback-text-field" cols="30" rows="10" required>
-            В свободной форме
-          </textarea>
+          <textarea class="feedback__input feedback__input_text" name="feedback-text" id="feedback-text-field" cols="30" rows="10" required>В свободной форме</textarea>
         </p>
         <button type="submit" class="button-red feedback__button">Отправить</button>
       </form>
@@ -275,7 +298,7 @@
     <!-- /.feedback -->
   </main>
   <footer class="footer container">
-    <div class="grid-row">
+    <div class="grid-row grid-row_align_start">
       <section class="social col-1">
         <h3 class="visually-hidden">Наши социальные сети</h3>
         <ul class="social__list ">
@@ -302,7 +325,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright__logo">
           <img src="img/footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
-        <p class="descr">Сделано в <a class="link-white" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019 </p>
+        <p class="footer-copyright__text">Сделано в <a class="link-white" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019 </p>
       </section>
       <!-- /.footer-copyright -->
     </div>
