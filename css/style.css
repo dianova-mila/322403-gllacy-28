@@ -4,7 +4,7 @@
   --dark-grey: #5a5a5a;
   --grey: #999999;
   --light-grey: #EDEDED;
-  --light-light-grey: #F8F7F4;
+  --lighten-grey: #F8F7F4;
   --basic-white: #ffffff;
   --basic-white-20: rgba(255, 255, 255, 0.2);
   --basic-white-40: rgba(255, 255, 255, 0.4);
@@ -286,7 +286,7 @@ img {
 }
 .header-catalog__item_active {
   background-color: var(--dark-red);
-  color: var(--basic-black);
+  color: var(--basic-white);
   cursor: default;
 }
 .header-catalog__item_active:hover, .header-catalog__item_active:focus, .header-catalog__item_active:active {
@@ -389,7 +389,7 @@ img {
   padding-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: var(--light-light-grey);
+  background-color: var(--lighten-grey);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
 }
@@ -414,7 +414,7 @@ img {
   position: absolute;
   top: 55px;
   right: 0px;
-  background-color: var(--light-light-grey);
+  background-color: var(--lighten-grey);
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 19px;
@@ -462,7 +462,7 @@ img {
 .header-basket {
   display: block;
   position: absolute;
-  background-color: var(--light-light-grey);
+  background-color: var(--lighten-grey);
   color: var(--basic-black);
   border-radius: 4px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -473,7 +473,7 @@ img {
   top: 55px;
   right: 0;
   padding-top: 17px;
-  padding-right: 12px;
+  padding-right: 14px;
   padding-left: 12px;
   padding-bottom: 12px;
 }
@@ -513,7 +513,9 @@ img {
   font-size: 15px;
   line-height: 16px;
   font-weight: 700;
-  padding-top: 6px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 21px;
   padding-right: 3px;
   text-align: right;
   position: relative;
@@ -525,17 +527,16 @@ img {
   width: 510px;
   height: 0px;
   border: 1px solid #CACAC7;
-  top: -11px;
+  top: 3px;
   left: 3px;
 }
 
 .header-basket__button {
-  margin-left: 342px;
   margin-bottom: 11px;
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 16px;
 }
 
 .header-contacts {
@@ -660,60 +661,36 @@ img {
   padding-right: 10px;
   display: block;
 }
-.advantages__item_production::before {
+.advantages__item::before {
   content: "";
   display: block;
   position: absolute;
   width: 49px;
   height: 49px;
-  background-image: url(../img/adv/ice-cream.svg);
   background-repeat: no-repeat;
   top: 0px;
   left: 20px;
+}
+.advantages__item_production::before {
+  background-image: url(../img/adv/ice-cream.svg);
 }
 .advantages__item_purchase::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 49px;
-  height: 49px;
   background-image: url(../img/adv/cow.svg);
-  background-repeat: no-repeat;
-  top: 0px;
-  left: 20px;
 }
 .advantages__item_natural::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 49px;
-  height: 49px;
   background-image: url(../img/adv/eco.svg);
-  background-repeat: no-repeat;
-  top: 0px;
-  left: 20px;
 }
 .advantages__item_delivery::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 49px;
-  height: 49px;
   background-image: url(../img/adv/thermometer.svg);
-  background-repeat: no-repeat;
-  top: 0px;
-  left: 20px;
 }
 
 .advantages__overview {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-  width: 100%;
-  flex-grow: 1;
   padding: 0;
   margin: 0;
-  padding-bottom: 7px;
+  margin-bottom: 7px;
   padding-left: 20px;
 }
 
@@ -737,7 +714,7 @@ img {
   font-weight: 500;
   padding: 0;
   margin: 0;
-  padding-bottom: 3px;
+  margin-bottom: 3px;
 }
 .news__item {
   font-weight: 700;
@@ -745,6 +722,8 @@ img {
   line-height: 30px;
   color: var(--basic-black);
   text-decoration: underline;
+  display: block;
+  max-width: 285px;
   padding: 0;
   margin: 0;
 }
@@ -754,7 +733,7 @@ img {
 
 /* subscription */
 .subscription {
-  background-color: var(--light-light-grey);
+  background-color: var(--lighten-grey);
   color: var(--dark-grey);
   border-radius: 16px;
   min-height: 210px;
@@ -774,9 +753,7 @@ img {
 .subscription__offer {
   padding: 0;
   margin: 0;
-}
-.subscription__form {
-  padding-top: 40px;
+  margin-bottom: 40px;
 }
 .subscription__email {
   height: 44px;
@@ -830,7 +807,7 @@ img {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  background-color: var(--light-light-grey);
+  background-color: var(--lighten-grey);
   border-radius: 4px;
   color: var(--basic-black);
   font-size: 24px;
@@ -845,13 +822,13 @@ img {
 .feedback__item {
   padding: 0;
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .feedback__text {
   padding: 0;
   margin: 0;
   font-weight: 500;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .feedback__input {
   border: 1px solid #D3D3D2;
@@ -874,12 +851,15 @@ img {
   color: var(--grey);
 }
 .feedback__button {
-  margin-left: 289px;
-  margin-top: -1px;
   padding-top: 15px;
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* footer */
