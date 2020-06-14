@@ -138,58 +138,60 @@
             <option value="fat">по жирности</option>
           </select>
         </fieldset>
-        <fieldset class="filter__item">
-          <div class="filter__price">
-            <p class="filter__title">Цена: 100 ₽ – 500 ₽</p>
-            <div class="filter__range filter__input">
-              <button type="button" class="filter__button_circle">от</button>
-              <button type="button" class="filter__button_circle">до</button>
+        <fieldset class="filter__item filter-price">
+            <p class="filter__title filter-price__title">Цена: <input class="filter-price__number" type="number" name="min-price" value="0">
+              </label> ₽ – <input class="filter-price__number" type="number" name="max-price" value="500"> ₽</p>
+            <div class="filter-price__range filter__input">
+              <div class="filter-price__scale">
+                <div class="filter-price__bar"></div>
+                <div class="filter-price__toggle filter-price__toggle_min" tabindex="0"></div>
+                <div class="filter-price__toggle filter-price__toggle_max" tabindex="0"></div>
+              </div>
             </div>
-          </div>
         </fieldset>
         <fieldset class="filter__item">
           <label class="filter__title">Жирность:</label>
-          <ul class="filter__input">
+          <ul class="filter__input filter-radio">
             <li>
-              <input class="filter__radio" type="radio" name="filter-fat" value="0" id="filter-fat-0">
-              <label for="filter-fat-0">0%</label>
+              <input class="visually-hidden filter-radio__input" type="radio" name="filter-fat" value="0" id="filter-fat-0">
+              <label class="filter-radio__label" for="filter-fat-0">0%</label>
             </li>
             <li>
-              <input class="filter__radio" type="radio" name="filter-fat" value="10" id="filter-fat-10" checked>
-              <label for="filter-fat-10">до 10%</label>
+              <input class="visually-hidden filter-radio__input" type="radio" name="filter-fat" value="10" id="filter-fat-10" checked>
+              <label class="filter-radio__label" for="filter-fat-10">до 10%</label>
             </li>
             <li>
-              <input class="filter__radio" type="radio" name="filter-fat" value="30" id="filter-fat-30">
-              <label for="filter-fat-30">до 30%</label>
+              <input class="visually-hidden filter-radio__input" type="radio" name="filter-fat" value="30" id="filter-fat-30">
+              <label class="filter-radio__label" for="filter-fat-30">до 30%</label>
             </li>
             <li>
-              <input class="filter__radio" type="radio" name="filter-fat" value="30+" id="filter-fat-above-30">
-              <label for="filter-fat-above-30">выше 30%</label>
+              <input class="visually-hidden filter-radio__input" type="radio" name="filter-fat" value="30+" id="filter-fat-above-30">
+              <label class="filter-radio__label" for="filter-fat-above-30">выше 30%</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter__item">
-          <label class="filter__title">Наполнители:</label>
-          <ul class="filter__input">
+          <label class="filter__title filter-checkbox__title">Наполнители:</label>
+          <ul class="filter__input filter-checkbox">
             <li>
-              <input class="filter__checkbox" type="checkbox" name="chocolate" id="chocolate-field" checked>
-              <label for="chocolate-field">шоколадные</label>
+              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="chocolate" id="chocolate-field" checked>
+              <label class="filter-checkbox__label" for="chocolate-field">шоколадные</label>
             </li>
             <li>
-              <input class="filter__checkbox" type="checkbox" name="sugar" id="sugar-field" checked>
-              <label for="sugar-field">сахарные присыпки</label>
+              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="sugar" id="sugar-field" checked>
+              <label class="filter-checkbox__label" for="sugar-field">сахарные присыпки</label>
             </li>
             <li>
-              <input class="filter__checkbox" type="checkbox" name="fruits" id="fruits-field">
-              <label for="fruits-field">фрукты</label>
+              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="fruits" id="fruits-field">
+              <label class="filter-checkbox__label" for="fruits-field">фрукты</label>
             </li>
             <li>
-              <input class="filter__checkbox" type="checkbox" name="syrups" id="syrups-field">
-              <label for="syrups-field">сиропы</label>
+              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="syrups" id="syrups-field">
+              <label class="filter-checkbox__label" for="syrups-field">сиропы</label>
             </li>
             <li>
-              <input class="filter__checkbox" type="checkbox" name="jams" id="jams-field">
-              <label for="jams-field">джемы</label>
+              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="jams" id="jams-field">
+              <label class="filter-checkbox__label" for="jams-field">джемы</label>
             </li>
           </ul>
         </fieldset>

@@ -104,41 +104,41 @@
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
 
     <section class="slider container">
-        <article class="slider__item slider__item_1 slider-item">
-          <figure>
-            <img class="slider-item__img"  src="img/slider/ice_1-1.png" height="584" width="372" alt="Фотография мороженого">
-            <img class="slider-item__img"  src="img/slider/ice_1-2.png" height="519" width="333" alt="Фотография мороженого">
-            <figcaption class="slider-item__text">Крем-брюле и пломбир с малиновым джемом</figcaption>
-          </figure>
-          <a href="#" class="slider-item__link button-red">Давайте оба</a>
-        </article>
-        <!-- /.slider-item -->
-        <article class="slider__item slider__item_2 slider-item">
-          <figure>
-            <img class="slider-item__img"  src="img/slider/ice_2-1.png" height="584" width="372" alt="Фотография мороженого">
-            <img class="slider-item__img"  src="img/slider/ice_2-2.png" height="523" width="338" alt="Фотография мороженого">
-            <figcaption  class="slider-item__text">Шоколадный пломбир и лимонный сорбет</figcaption>
-          </figure>
-          <a href="#" class="slider-item__link button-red">Давайте оба</a>
-        </article>
-        <!-- /.slider-item -->
-        <article class="slider__item slider__item_3 slider-item">
-          <figure>
-            <img class="slider-item__img"  src="img/slider/ice_3-1.png" height="584" width="372" alt="Фотография мороженого">
-            <img class="slider-item__img"  src="img/slider/ice_3-2.png" height="523" width="326" alt="Фотография мороженого">
-            <figcaption class="slider-item__text">Пломбир с помадкой и клубничный щербет</figcaption>
-          </figure>
-          <a href="#" class="slider-item__link button-red">Давайте оба</a>
-        </article>
-        <!-- /.slider-item -->
-        <ul class="slider-control">
+      <ul class="slider__list">
+        <li class="slider-item slider__item slider__item_1 slider__item_active">
+          <h3 class="slider-item__text">
+            Крем-брюле и пломбир с малиновым джемом
+          </h3>
+          <a class="slider-item__link button-red" href="#">
+            Давайте оба!
+          </a>
+        </li>
+        <li class="slider-item slider__item slider__item_2">
+          <h3 class="slider-item__text">
+            Шоколадный пломбир и лимонный сорбет
+          </h3>
+          <a class="slider-item__link button-red" href="#">
+            Давайте оба!
+          </a>
+        </li>
+        <li class="slider-item slider__item slider__item_3">
+          <h3 class="slider-item__text">
+            Пломбир с помадкой<br> и клубничный щербет
+          </h3>
+          <a class="slider-item__link button-red" href="#">
+            Давайте оба!
+          </a>
+        </li>
+      </ul>
+        <ul class="slider-controls">
           <!--    Кнопки для сладера    -->
-          <li><button type="button" class="slider__button slider__button_active"></button></li>
-          <li><button type="button" class="slider__button"></button></li>
-          <li><button type="button" class="slider__button"></button></li>
+          <li><button type="button" class="slider__button slider__button_active" aria-label="Первый слайд"></button></li>
+          <li><button type="button" class="slider__button" aria-label="Второй слайд"></button></li>
+          <li><button type="button" class="slider__button" aria-label="Третий слайд"></button></li>
         </ul>
       </section>
       <!-- /.slider -->
+
 
 
     <section class="gifts container">
@@ -147,8 +147,8 @@
           <article class="gift gift_raspberry">
             <h2 class="gift__title">Малинка даром!</h2>
             <p class="gift__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
-              маринового варенья бесплатно.</p>
-            <a href="#" class="button-red">Хочу варенье!</a>
+              малинового варенья бесплатно.</p>
+            <div class="button-wrapper"><a href="#" class="button-red gift__button">Хочу варенье!</a></div>
           </article>
           <!-- /.gift -->
         </div>
@@ -157,7 +157,7 @@
             <h2 class="gift__title">Шоколадки даром!</h2>
             <p class="gift__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
               присыпки совершенно бесплатно.</p>
-            <a href="#" class="button-red">Хочу шоколадки!</a>
+            <div class="button-wrapper"><a href="#" class="button-red gift__button">Хочу шоколадки!</a></div>
           </article>
           <!-- /.gift -->
         </div>
@@ -186,14 +186,14 @@
           <article class="catalog-item catalog-item_hit">
             <img src="img/catalog/ice-str.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
             <p class="catalog-item__price">355 &#8381;<span class="catalog-item__price-small">/кг</span></p>
-            <h3 class="catalog-item__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <h3 class="catalog-item__title">Сливочно-клубничное<br> с присыпкой из белого шоколада</h3>
           </article>
         </div>
         <div class="col-1">
           <article class="catalog-item catalog-item_hit">
             <img src="img/catalog/ice-brulee.jpg" width="267" height="267" alt="Фотография мороженого" class="catalog-item__img">
             <p class="catalog-item__price">415 &#8381;<span class="catalog-item__price-small">/кг</span></p>
-            <h3 class="catalog-item__title">Сливочное крем-брюле с карамельной подливкой </h3>
+            <h3 class="catalog-item__title">Сливочное крем-брюле<br> с карамельной подливкой </h3>
           </article>
         </div>
       </div>
@@ -263,14 +263,15 @@
       <!--   Тут будет карта   -->
       <section class="map-contacts">
         <address class="map-contacts__address">
-          Адрес главного офиса и офлайн-магазина:<br>
+          Адрес главного офиса<br> и офлайн-магазина:
           <span class="map-contacts__bold">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
         </address>
         <p class="map__text">
           Для заказов по телефону:<br>
-          <a class="map-contacts__bold" href="tel:+78124502525">8 812 450-25-25</a><br>
+          <a class="map-contacts__bold map-contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
           (с 10 до 20 ежедневно)
         </p>
+        <button class="button-red map__button" type="button">Форма обратной связи</button>
       </section>
       <!-- /.map-contacts -->
     </section>
@@ -292,7 +293,7 @@
           <label class="visually-hidden" for="feedback-text-field">Текст сообщения</label>
           <textarea class="feedback__input feedback__input_text" name="feedback-text" id="feedback-text-field" cols="30" rows="10" required>В свободной форме</textarea>
         </p>
-        <div class="feedback-button-wrapper"><button type="submit" class="button-red feedback__button">Отправить</button></div>
+        <div class="button-wrapper"><button type="submit" class="button-red feedback__button">Отправить</button></div>
       </form>
     </section>
     <!-- /.feedback -->
