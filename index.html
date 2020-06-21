@@ -175,7 +175,7 @@
 
     <section class="hits container">
       <h3 class="visually-hidden">Наши хиты среди мороженого</h3>
-      <div class="grid-row hits-row">
+      <div class="grid-row grid-row_without_padding">
         <div class="col-1">
           <article class="catalog-item catalog-item_hit">
             <img src="img/catalog/ice-orange.jpg" width="267" height="267" alt="Фотография мороженого"
@@ -279,9 +279,9 @@
 
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ba6cd367a7182fcf7eef125f1763b4b638ae95fc198889d0b13d0e65a76bbfb&amp;source=constructor"
-        width="100%" height="430" frameborder="0"></iframe>
+      <iframe class="map__frame"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ba6cd367a7182fcf7eef125f1763b4b638ae95fc198889d0b13d0e65a76bbfb&amp;source=constructor">
+      </iframe>
       <div class="container">
         <section class="map-contacts">
           <address class="map-contacts__address">
@@ -304,21 +304,27 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback__text">Мы обязательно вам ответим!</p>
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback__item">
+        <div class="feedback__item">
           <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
-          <input class="feedback__input" type="text" name="feedback-name" id="feedback-name-field"
+          <div class="input-wrapper">
+            <input class="feedback__input" type="text" name="feedback-name" id="feedback-name-field"
             placeholder="Имя Фамилия" required>
-        </p>
-        <p class="feedback__item">
+          </div>
+        </div>
+        <div class="feedback__item">
           <label class="visually-hidden" for="feedback-email-field">Электронная почта</label>
-          <input class="feedback__input" type="email" name="feedback-email" id="feedback-email-field"
+          <div class="input-wrapper">
+            <input class="feedback__input" type="email" name="feedback-email" id="feedback-email-field"
             placeholder="email@example.com" required>
-        </p>
-        <p class="feedback__item">
+          </div>
+        </div>
+        <div class="feedback__item">
           <label class="visually-hidden" for="feedback-text-field">Текст сообщения</label>
-          <textarea class="feedback__input feedback__input_text" name="feedback-text" id="feedback-text-field" cols="30"
+          <div class="input-wrapper">
+            <textarea class="feedback__input feedback__input_text" name="feedback-text" id="feedback-text-field" cols="30"
             rows="10" required>В свободной форме</textarea>
-        </p>
+          </div>
+        </div>
         <div class="button-wrapper"><button type="submit" class="button-red feedback__button">Отправить</button></div>
         <button class="feedback__cross" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
@@ -327,7 +333,7 @@
   </main>
 
   <footer class="footer container">
-    <div class="grid-row grid-row_align_start">
+    <div class="grid-row grid-row_align_start grid-row_without_padding">
       <section class="social col-1">
         <h3 class="visually-hidden">Наши социальные сети</h3>
         <ul class="social__list ">

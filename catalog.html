@@ -146,12 +146,12 @@
     <h1 class="catalog-title">Сливочное мороженое</h1>
 
     <section class="filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-grid" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filter__item">
           <label class="filter__title" for="filter-sort-field">Сортировка:</label>
           <div class="sort-wrapper">
-            <select class="filter__input filter__sort" name="filter-sort" id="filter-sort-field"
-              style="-webkit-appearance: none;">
+            <select class="filter__input filter__sort" name="filter-sort" id="filter-sort-field">
               <option value="popular" selected>по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
@@ -163,9 +163,9 @@
           <p class="filter__title filter-price__title">
             Цена:
             <label class="visually-hidden" for="min-price">от</label>
-            <input class="filter-price__number" type="text" name="min-price" value="100"> ₽ –<label
+            <input class="filter-price__number" type="text" id="min-price" name="min-price" value="100"> ₽ –<label
               class="visually-hidden" for="max-price">до</label><input class="filter-price__number" type="text"
-              name="max-price" value="500"> ₽</p>
+              id="max-price" name="max-price" value="500"> ₽</p>
           <div class="filter-price__range filter__input">
             <div class="filter-price__scale">
               <div class="filter-price__bar"></div>
