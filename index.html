@@ -48,7 +48,7 @@
             </button>
             <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="search-field">Поиск</label>
-              <input class="header-actions__input header-actions__input_search" type="text" name="search"
+              <input class="basic-input header-actions__input header-actions__input_search" type="text" name="search"
                 id="search-field" placeholder="Крем-брюле" required>
             </form>
           </li>
@@ -67,12 +67,12 @@
             <form class="header-signin" action="https://echo.htmlacademy.ru" method="post">
               <p class="header-signin__item">
                 <label class="visually-hidden" for="signin-login">Электронная почта</label>
-                <input class="header-actions__input header-signin__login" type="email" name="login" id="signin-login"
+                <input class="basic-input header-actions__input header-signin__login" type="email" name="login" id="signin-login"
                   placeholder="email@example.com" required>
               </p>
               <p class="header-signin__item">
                 <label class="visually-hidden" for="signin-password">Пароль</label>
-                <input class="header-actions__input header-signin__password" type="password" name="password"
+                <input class="basic-input header-actions__input header-signin__password" type="password" name="password"
                   id="signin-password" placeholder="••••••••" required>
               </p>
               <div>
@@ -304,27 +304,21 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback__text">Мы обязательно вам ответим!</p>
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback__item">
+        <p class="feedback__item">
           <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
-          <div class="input-wrapper">
-            <input class="feedback__input" type="text" name="feedback-name" id="feedback-name-field"
+          <input class="basic-input feedback__input" type="text" name="feedback-name" id="feedback-name-field"
             placeholder="Имя Фамилия" required>
-          </div>
-        </div>
-        <div class="feedback__item">
+        </p>
+        <p class="feedback__item">
           <label class="visually-hidden" for="feedback-email-field">Электронная почта</label>
-          <div class="input-wrapper">
-            <input class="feedback__input" type="email" name="feedback-email" id="feedback-email-field"
+          <input class="basic-input feedback__input" type="email" name="feedback-email" id="feedback-email-field"
             placeholder="email@example.com" required>
-          </div>
-        </div>
-        <div class="feedback__item">
+        </p>
+        <p class="feedback__item">
           <label class="visually-hidden" for="feedback-text-field">Текст сообщения</label>
-          <div class="input-wrapper">
-            <textarea class="feedback__input feedback__input_text" name="feedback-text" id="feedback-text-field" cols="30"
-            rows="10" required>В свободной форме</textarea>
-          </div>
-        </div>
+          <textarea class="basic-input feedback__input feedback__input_text" name="feedback-text" id="feedback-text-field" cols="30"
+            rows="10" placeholder="В свободной форме" required></textarea>
+        </p>
         <div class="button-wrapper"><button type="submit" class="button-red feedback__button">Отправить</button></div>
         <button class="feedback__cross" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
