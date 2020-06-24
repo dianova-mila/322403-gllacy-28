@@ -69,6 +69,14 @@ img {
       align-content: start;
 }
 
+.page-body_bg_blue {
+  background-color: var(--light-blue);
+}
+
+.page-body_bg_brown {
+  background-color: var(--basic-brown);
+}
+
 .container {
   width: 1200px;
   margin-right: auto;
@@ -825,6 +833,8 @@ img {
 
 .slider__item_active {
   display: block;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s;
 }
 
 .slider__item_1::before {
@@ -836,7 +846,7 @@ img {
 }
 
 .slider__item_3::before {
-  background-image: url(../img/slider/slider-2.png);
+  background-image: url(../img/slider/slider-3.png);
 }
 
 .slider-controls {
@@ -878,6 +888,36 @@ img {
 .slider__button_active:focus, .slider__button_active:hover {
   background: var(--basic-white);
   cursor: default;
+}
+
+/* Animations */
+@-webkit-keyframes show {
+  0% {
+    opacity: 0%;
+  }
+  40% {
+    opacity: 40%;
+  }
+  70% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0%;
+  }
+  40% {
+    opacity: 40%;
+  }
+  70% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 /* gifts */
