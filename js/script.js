@@ -2,6 +2,7 @@
 
 var feedbackButton = document.querySelector(".map__button");
 var feedback = document.querySelector(".feedback");
+var feedbackBg = document.querySelector(".feedback__bg");
 var feedbackClose = document.querySelector(".feedback__cross");
 var feedbackForm = document.querySelector(".feedback__form");
 var feedbackName = document.querySelector("#feedback-name-field");
@@ -22,6 +23,7 @@ try {
 feedbackButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedback.classList.add("feedback_show");
+    feedbackBg.classList.add("feedback__bg_show");
 
     if (storageName && storageEmail) {
         feedbackName.value = storageName;
@@ -36,6 +38,7 @@ feedbackClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedback.classList.remove("feedback_show");
     feedback.classList.remove("feedback_error");
+    feedbackBg.classList.remove("feedback__bg_show");
 });
 
 feedbackForm.addEventListener("submit", function (evt) {
@@ -58,6 +61,7 @@ window.addEventListener("keydown", function (evt) {
         evt.preventDefault();
         feedback.classList.remove("feedback_show");
         feedback.classList.remove("feedback_error");
+        feedbackBg.classList.remove("feedback__bg_show");
       }
     }
   });
