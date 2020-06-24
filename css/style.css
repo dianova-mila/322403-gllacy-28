@@ -42,7 +42,6 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: var(--basic-white);
-  background-color: var(--light-green);
 }
 
 a {
@@ -54,7 +53,7 @@ img {
   height: auto;
 }
 
-.page {
+.page_1 {
   height: 100%;
 }
 
@@ -69,11 +68,15 @@ img {
       align-content: start;
 }
 
-.page-body_bg_blue {
+.page-body_bg_1 {
+  background-color: var(--light-green);
+}
+
+.page-body_bg_2 {
   background-color: var(--light-blue);
 }
 
-.page-body_bg_brown {
+.page-body_bg_3 {
   background-color: var(--basic-brown);
 }
 
