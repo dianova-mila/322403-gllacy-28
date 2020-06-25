@@ -54,7 +54,7 @@ img {
   height: auto;
 }
 
-.page_1 {
+.page {
   height: 100%;
 }
 
@@ -1489,12 +1489,15 @@ img {
 }
 
 .social__list {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social__item {
@@ -1504,6 +1507,7 @@ img {
   border-radius: 50%;
   opacity: 80%;
   margin-right: 8px;
+  margin-bottom: 4px;
 }
 
 .social__item:active {
@@ -1779,6 +1783,15 @@ img {
   padding-bottom: 6px;
   padding-right: 6px;
   padding-left: 5px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .filter-radio__label {
@@ -1820,6 +1833,15 @@ img {
 .filter-checkbox {
   padding-left: 6px;
   padding-right: 7px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .filter-checkbox__title {
